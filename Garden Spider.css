@@ -9,6 +9,22 @@ ol.a {
 }
 li {margin-left:20px;
 }
-a {
+/* unvisited link */
+a:link {
     color: black;
+}
+
+/* visited link */
+a:visited {
+    color: blue;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: 81DAF5;
 }
