@@ -7,3 +7,5 @@ h1 { color:#81DAF5;
 ol.a {
     list-style-type: upper-roman;
 }
+li {margin-left:20px;
+}
