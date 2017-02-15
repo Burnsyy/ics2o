@@ -3,6 +3,7 @@ body {background-color:#A4A4A4;
 h1 { color:#81DAF5;
   text-align:center;
   font-size:32px;
+  background-color:white;
 }
 ol.a {
     list-style-type: upper-roman;
