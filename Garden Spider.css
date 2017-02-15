@@ -29,3 +29,5 @@ a:hover {
 a:active {
     color: purple;
 }
+ul.b {
+  list-style-image: url('sqcyan.gif');
