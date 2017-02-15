@@ -31,3 +31,7 @@ a:active {
 }
 ul.b {
   list-style-image: url('http://www.woollettaquanet.info/SheetMusic/musicimages/sqcyan.gif');
+}
+ul.c {
+  list-style-image: url('http://www.woollettaquanet.info/SheetMusic/musicimages/animated-arrow3.gif');
+}
