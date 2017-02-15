@@ -22,10 +22,10 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: 81DAF5;
+    color: lightblue;
 }
 
 /* selected link */
 a:active {
-    color: lightblue;
+    color: purple;
 }
