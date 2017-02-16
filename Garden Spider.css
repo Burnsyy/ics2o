@@ -35,3 +35,6 @@ ul.b {
 ul.c {
   list-style-image: url('http://www.woollettaquanet.info/SheetMusic/musicimages/animated-arrow5.gif');
 }
+h2 h3 { margin-left:40px;
+        font-size: 20px
+}
