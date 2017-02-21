@@ -39,3 +39,10 @@ ul.c {
 h2 h3 { font-size: 20px
 }
 ul.d { list-style-type: cirlce;
+}
+ul.e { background: lightblue;
+  padding: 20px;
+}
+ul li.f { background: red;
+    padding: 5px;
+    margin-left: 35px;
