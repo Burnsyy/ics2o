@@ -5,14 +5,11 @@ h1 { color:#81DAF5;
   font-size:32px;
   background-color:white;
 }
-h2 { text-indent:5px;
-  color:#81DAF5;
+h2 { color:#81DAF5;
   text-decoration: underline;
 }
 ol.a {
     list-style-type: upper-roman;
-}
-li {text-indent:20px;
 }
 /* unvisited link */
 a:link {
@@ -39,6 +36,6 @@ ul.b {
 ul.c {
   list-style-image: url('http://www.woollettaquanet.info/SheetMusic/musicimages/animated-arrow5.gif');
 }
-h2 h3 { margin-left:40px;
-        font-size: 20px
+h2 h3 { font-size: 20px
 }
+ul.d { list-style-type: cirlce;
