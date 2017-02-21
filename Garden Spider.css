@@ -6,7 +6,7 @@ h1 { color:#81DAF5;
   background-color:white;
 }
 h2 { text-indent: 70px;
-  color:#81DAF5;
+  color: #00CED1;
   text-decoration: underline;
 }
 ol.a {
@@ -48,3 +48,6 @@ ul.e { background: lightblue;
 ul li.f { background: #00CED1;
     margin: 10px;
 }  
+<!-- is h2 for all headings okay>
+<!-- is github public file sharing correct>
+<!-- 
