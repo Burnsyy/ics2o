@@ -5,7 +5,8 @@ h1 { color:#81DAF5;
   font-size:32px;
   background-color:white;
 }
-h2 { color:#81DAF5;
+h2 { text-indent: 70px;
+  color:#81DAF5;
   text-decoration: underline;
 }
 ol.a {
