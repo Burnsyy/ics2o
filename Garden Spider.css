@@ -5,13 +5,14 @@ h1 { color:#81DAF5;
   font-size:32px;
   background-color:white;
 }
-h2 { margin-left:40px;
+h2 { text-indent:40px;
   color:#81DAF5;
+  text-decoration: underline;
 }
 ol.a {
     list-style-type: upper-roman;
 }
-li {margin-left:20px;
+li {text-indent:20px;
 }
 /* unvisited link */
 a:link {
