@@ -1,11 +1,14 @@
-body {background-color:#A4A4A4;
+body {
+  background-color:#A4A4A4;
 }
-h1 { color:#81DAF5;
+h1 { 
+  color:#81DAF5;
   text-align:center;
   font-size:32px;
   background-color:white;
 }
-h2 { text-indent: 70px;
+h2 { 
+  text-indent: 70px;
   color: #81DAF5;
   text-decoration: underline;
 }
@@ -21,7 +24,8 @@ a:link {
 a:visited {
     color: black;
 }
-li { margin-left: 20px;
+li { 
+  margin-left: 20px;
 }
 /* mouse over link */
 a:hover {
@@ -38,15 +42,18 @@ ul.b {
 ul.c {
   list-style-image: url('http://www.woollettaquanet.info/SheetMusic/musicimages/animated-arrow5.gif');
 }
-h2 h3 { font-size: 20px
+h2 h3 { 
+  font-size: 20px
 }
-ul.d { list-style-type: circle;
+ul.d { 
+  list-style-type: circle;
 }
-ul.e { background: lightblue;
+ul.e { 
+  background: lightblue;
   padding: 20px;
 }
-ul li.f { background: #00CED1;
+ul li.f { 
+  background: #00CED1;
     margin: 10px;
 }  
-<!-- is h2 for all headings okay>
-<!-- is github public file sharing correct>
+
