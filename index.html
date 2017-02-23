@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title> Portfolio </title>
-</head>
+	<title> Portfolio </title>
+		<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2c6e8c;
+}
 
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #848484;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#2c6e8c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+h1 {
+	text-align:center;
+	background-color:#2c6e8c;
+	color:white;
+}
+body {
+background-image: url("https://image.freepik.com/free-vector/hexagonal-pattern_1051-833.jpg");
+}
+  </style>
+</head>
 <body>
-	<center> <h1> Cory's ICS2O Portfolio </h1> </center>
-	<ul> 
-		<li> <a href="House%20Spider.html"> About Me </a> </li>
-		<li> <a href="Grass%20Spider.html"> Computer Comparison </a> </li>
-		<li> <a href="Garden%20Spider.html"> Setting up Your Computer </a> </li>
-	</ul>
-</body>
+<h1> Cory's ICS2O Portfolio </h1>
+<ul>
+  <li><a href="House%20Spider.html">House Spider</a></li>
+  <li><a href="Grass%20Spider.html">Grass Spider</a></li>
+  <li class="dropdown">
+    <a href="Garden%20Spider.html" class="dropbtn">Garden Spider</a>
+    <div class="dropdown-content">
+      <a href="Garden%20Spider.html">Internet</a>
+      <a href="Garden%20Spider%202.html">Apllications</a>
+      <a href="Garden%20Spider%203.html">Sharing Information </a>
+	  </li>
+    </div>
+  <li><a href="LINK">Ant Mimic Spider</a></li>
+</ul>
+	</body>
 </html>
