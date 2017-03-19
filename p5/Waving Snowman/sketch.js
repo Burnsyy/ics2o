@@ -6,6 +6,7 @@ function setup() {
 }
 
 function draw() {
+strokeWeight(1);
 stroke(0, 0, 0);
 //background
 fill(130, 203, 237);
@@ -14,6 +15,7 @@ rect(0, 0, 400, 400);
 fill(214, 195, 195);
 rect(0,350,399,50);
 // bottom
+StrokeWeight(3);
 fill(255, 255, 255);
 ellipse(200, 300, 150, 150);
 // middle
