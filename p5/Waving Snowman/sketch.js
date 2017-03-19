@@ -4,10 +4,8 @@ Simple waving snowman
 function setup() {
   createCanvas(400, 400);
 }
-
 function draw() {
-strokeWeight(1);
-stroke(0, 0, 0);
+noStroke();
 //background
 fill(130, 203, 237);
 rect(0, 0, 400, 400);
@@ -15,7 +13,8 @@ rect(0, 0, 400, 400);
 fill(214, 195, 195);
 rect(0,350,399,50);
 // bottom
-StrokeWeight(3);
+strokeWeight(3);
+stroke(0, 0, 0);
 fill(255, 255, 255);
 ellipse(200, 300, 150, 150);
 // middle
@@ -27,7 +26,7 @@ line(160,200,50,100);
 //right arm
 line(240,200,350,122);
 //snow
-strokeWeight(5);
+strokeWeight(9);
 stroke(255, 255, 255);
 point(317,241);
 point(69,300);
