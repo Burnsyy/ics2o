@@ -7,60 +7,40 @@ function setup() {
 }
 function draw() {
 noStroke();
-//background
-fill(130, 203, 237);
-rect(0, 0, 400, 400);
-//ground
-fill(214, 195, 195);
-rect(0,350,399,50);
-// bottom
-strokeWeight(3);
-stroke(0, 0, 0);
+//table
+background(186, 145, 20); 
+// plate
+ellipse(200, 200, 350, 350); 
+ellipse(200, 200, 300, 300); 
+//fish
+noStroke();
+fill(48, 184, 184);
+bezier(133, 168, 386, 359, 427, 108, 111, 201);
+//fisheye
 fill(255, 255, 255);
-ellipse(200, 300, 150, 150);
-// middle
-ellipse(200, 200, 100, 100);
-//bottom
-ellipse(200, 120, 75, 75);
-//left arm
-line(160,200,50,100);
-//right arm
-line(240,200,350,122);
-//snow
-strokeWeight(9);
-stroke(255, 255, 255);
-point(317,241);
-point(69,300);
-point(94,262);
-point(294,289);
-point(64,339);
-point(40,229);
-point(61,141);
-point(105,212);
-point(23,300);
-point(140,237);
-point(106,104);
-point(365,227);
-point(347,275);
-point(343,338);
-point(323,203);
-point(282,216);
-point(236,22);
-point(140,151);
-point(252,114);
-point(149,56);
-point(188,54);
-point(50,52);
-point(50,190);
-point(26,112);
-point(100,18);
-point(378,144);
-point(322,67);
-point(372,70);
-point(352,27);
-point(301,109);
-point(268,67);
-point(282,151);
-point(347,154);
-point(356,101);
+ellipse(302,208,10,10);
+//eyeball
+fill(0, 0, 0);
+ellipse(302,208,5,5);
+//potato
+fill(112, 59, 35);
+ellipse(200,115,133,75);
+//mash
+fill(161, 126, 126);
+ellipse(200,115, 110,14);
+//pizza
+fill(214, 142, 54);
+triangle(304,267,115,333,97,227);
+//crust
+stroke(143, 80, 80);
+strokeWeight(19);
+line(103,231,122,329);
+//pepperoni
+noStroke();
+fill(199, 37, 37);
+ellipse(151,293,30,30);
+ellipse(198,263,30,30);
+ellipse(151,257,30,30);
+ellipse(234,275,30,30);
+ellipse(183,288,30,30);
 }
