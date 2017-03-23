@@ -5,7 +5,7 @@ Cory
 */
 function setup() {
   var myCanvas=createCanvas(400, 400);
-  myCanvas.position(1000,200);
+  myCanvas.position(800,200);
 }
 function draw() {
 noStroke();
