@@ -1,9 +1,11 @@
 /*
 Simple waving snowman
+2017-03-09
+Cory
 */
 function setup() {
   var myCanvas=createCanvas(400, 400);
-  myCanvas.position(200,200);
+  myCanvas.position(1000,200);
 }
 function draw() {
 noStroke();
