@@ -1,5 +1,7 @@
 /*
-Simple waving snowman
+A house created using variables
+2017-03-22
+Cory
 */
 function setup() {
   var myCanvas=createCanvas(400, 400);
