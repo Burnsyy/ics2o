@@ -3,7 +3,7 @@ Simple waving snowman
 */
 function setup() {
   var myCanvas=createCanvas(400, 400);
-  myCanvas.position(200,200);
+  myCanvas.position(1000,200);
 }
 function draw() {
 var houseXPos =100;
