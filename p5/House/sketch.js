@@ -10,7 +10,7 @@ function setup() {
 function draw() {
 var houseXPos =100;
 var houseYPos = houseXPos+100;
-var houseWidth = 100;
+var houseWidth = 200;
 var houseHeight = houseWidth/2;
 //sky
 noStroke();
