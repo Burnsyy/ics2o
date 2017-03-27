@@ -5,7 +5,7 @@ Cory
 */
 function setup() {
   var myCanvas=createCanvas(400, 400);
-  myCanvas.position(400,200);
+  myCanvas.position(400,400);
 }
 function draw() {
 var houseXPos =100;
