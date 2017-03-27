@@ -5,12 +5,12 @@ Cory
 */
 function setup() {
   var myCanvas=createCanvas(400, 400);
-  myCanvas.position(0,200);
+  myCanvas.position(400,200);
 }
 function draw() {
 var houseXPos =100;
 var houseYPos = houseXPos+100;
-var houseWidth = 1000;
+var houseWidth = 100;
 var houseHeight = houseWidth/2;
 //sky
 noStroke();
