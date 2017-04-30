@@ -70,54 +70,55 @@ function colourSelection () {
 }
 
 function background () {
-	if (keyIsDown(97)) { //if '1' is pressed on the numpad make background white
+	if (keyIsPressed(97)) { //if '1' is pressed on the numpad make background white
         bg1 = 255
 	bg2 = 255
 	bg3 = 255
     }
-	if (keyIsDown(98)) { //if '2' is pressed on the numpad make background black
+	if (keyIsPressed(98)) { //if '2' is pressed on the numpad make background black
         bg1 = 0
 	bg2 = 0
 	bg3 = 0
     }
-	if (keyIsDown(99)) { //if '3' is pressed on the numpad make background blue
+	if (keyIsPressed(99)) { //if '3' is pressed on the numpad make background blue
         bg1 = 0
 	bg2 = 0
 	bg3 = 255
     }
-	if (keyIsDown(100)) { //if '4' is pressed on the numpad make background red
+	if (keyIsPressed(100)) { //if '4' is pressed on the numpad make background red
         bg1 = 255
 	bg2 = 0
 	bg3 = 0
     }
-	if (keyIsDown(101)) { //if '5' is pressed on the numpad make background orange
+	if (keyIsPressed(101)) { //if '5' is pressed on the numpad make background orange
         bg1 = 255
 	bg2 = 165
 	bg3 = 0
     }
-	if (keyIsDown(102)) { //if '6' is pressed on the numpad make background yellow
+	if (keyIsPressed(102)) { //if '6' is pressed on the numpad make background yellow
         bg1 = 255
 	bg2 = 255
 	bg3 = 0
     }
-	if (keyIsDown(103)) { //if '7' is pressed on the numpad make background green
+	if (keyIsPressed(103)) { //if '7' is pressed on the numpad make background green
         bg1 = 0
 	bg2 = 100
 	bg3 = 0
     }
-	if (keyIsDown(104)) { //if '8' is pressed on the numpad make background purple
+	if (keyIsPressed(104)) { //if '8' is pressed on the numpad make background purple
         bg1 = 160
 	bg2 = 32
 	bg3 = 240
     }
-	if (keyIsDown(105)) { //if '9' is pressed on the numpad make background pink
+	if (keyIsPressed(105)) { //if '9' is pressed on the numpad make background pink
         bg1 = 255
 	bg2 = 20
 	bg3 = 147
     }
-	if (keyIsDown(96)) { //if '0' is pressed on the numpad make background gray
+	if (keyIsPressed(96)) { //if '0' is pressed on the numpad make background gray
         bg1 = 190
 	bg2 = 190
 	bg3 = 190
     }
+	background(bg1, bg2, bg3);
 }
