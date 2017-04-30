@@ -24,6 +24,7 @@ function draw() {
 	colourSelection (); //draw colour display on top right
 	//code to crerate drawing
 	if (mouseIsPressed)  {
+      noStroke ();
       fill (colourR, colourG, colourB);
       rect (mouseX,mouseY,15,15);
 	}
