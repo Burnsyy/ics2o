@@ -22,6 +22,11 @@ function draw() {
 	rect (308, 0,44,50);
 	stroke (1);
 	colourSelection (); //draw colour display on top right
+	//code to crerate drawing
+	if (mouseIsPressed)  {
+      fill (colourR, colourG, colourB);
+      rect (mouseX,mouseY,15,15);
+	}
 }
 
 function shapeSelection () {
