@@ -23,11 +23,12 @@ function draw() {
 	stroke (1);
 	colourSelection (); //draw colour display on top right
 	//code to crerate drawing
+	if (mouseIsPressed && mouseX >= 3 && mouseX <= 18 && mouseY >= 3 && mouseY <= 18) {
 	if (mouseIsPressed)  {
       noStroke ();
       fill (colourR, colourG, colourB);
-      rect (mouseX,mouseY,15,15);
-	}
+      ellipse (mouseX,mouseY,15,15);
+	}}
 }
 
 function shapeSelection () {
