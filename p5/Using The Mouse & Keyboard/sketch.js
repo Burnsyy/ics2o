@@ -115,4 +115,9 @@ function background () {
 	bg2 = 20
 	bg3 = 147
     }
+	if (keyIsPressed(96)) { //if '0' is pressed on the numpad make background gray
+        bg1 = 190
+	bg2 = 190
+	bg3 = 190
+    }
 }
