@@ -89,21 +89,25 @@ function background () {
         bg1 = 255
 	bg2 = 0
 	bg3 = 0
+		background(bg1, bg2, bg3);
     }
 	if (keyIsPressed(101)) { //if '5' is pressed on the numpad make background orange
         bg1 = 255
 	bg2 = 165
 	bg3 = 0
+		background(bg1, bg2, bg3);
     }
 	if (keyIsPressed(102)) { //if '6' is pressed on the numpad make background yellow
         bg1 = 255
 	bg2 = 255
 	bg3 = 0
+		background(bg1, bg2, bg3);
     }
 	if (keyIsPressed(103)) { //if '7' is pressed on the numpad make background green
         bg1 = 0
 	bg2 = 100
 	bg3 = 0
+		background(bg1, bg2, bg3);
     }
 	if (keyIsPressed(104)) { //if '8' is pressed on the numpad make background purple
         bg1 = 160
@@ -120,5 +124,4 @@ function background () {
 	bg2 = 190
 	bg3 = 190
     }
-	background(bg1, bg2, bg3);
 }
