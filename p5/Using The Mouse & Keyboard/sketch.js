@@ -26,7 +26,7 @@ function draw() {
 	if (mouseIsPressed)  {
       noStroke ();
       fill (colourR, colourG, colourB);
-      rect (mouseX,mouseY,15,15);
+      ellipse (mouseX,mouseY,15,15);
 	}
 }
 
