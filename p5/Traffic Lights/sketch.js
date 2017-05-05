@@ -30,7 +30,7 @@ if ((millis () - startTime) >= 13000 ) {
 	r2on ();
 }
 if ((millis () - startTime) >= 16000 ) {
-	r1off ();
+	r2off ();
 	g2on ();
 }
 if ((millis () - startTime) >= 26000 ) {
