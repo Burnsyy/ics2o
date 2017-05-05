@@ -24,7 +24,13 @@ if ((millis () - startTime) >= 10000 ) {
 	g1off ();
 	y1on ();
 }
-}	
+if ((millis () - startTime) >= 13000 ) {
+	r1on ();
+	y1off ();
+}
+if ((millis () - startTime) >= 16000 ) {
+	r2on ();
+}
 
 function lights (){
 	fill(0, 0, 0);
