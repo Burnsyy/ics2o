@@ -33,6 +33,8 @@ if ((millis () - startTime) >= 16000 ) {
 	r1off ();
 	g2on ();
 }
+	
+}	
 
 function lights (){
 	fill(0, 0, 0);
