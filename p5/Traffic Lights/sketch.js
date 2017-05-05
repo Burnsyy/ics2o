@@ -29,15 +29,15 @@ if ((millis () - startTime) >= 13000 ) {
 	y1off ();
 	r2on ();
 }
-if ((millis () - startTime) >= 16000 ) {
+if ((millis () - startTime) >= 15000 ) {
 	r2off ();
 	g2on ();
 }
-if ((millis () - startTime) >= 26000 ) {
+if ((millis () - startTime) >= 25000 ) {
 	g2off ();
 	y2on ();
 }	
-if ((millis () - startTime) >= 29000 ) {
+if ((millis () - startTime) >= 28000 ) {
 	y1off ();
 	r2on ();
 }	
