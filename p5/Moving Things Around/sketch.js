@@ -63,7 +63,7 @@ function mouseClicked() {
 	basketball (); //create a new basketball
 	posX = mouseX; // creates basketball at mouse X position 
 	posY = mouseY; // creates basketball at mouse Y position 
-	speedX = 1 + round(mouseX/100);
+	speedX = 1 + round(mouseX/25);
 	speedY = round(mouseY/25);
 }
 	//basketball
