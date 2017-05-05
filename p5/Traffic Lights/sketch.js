@@ -33,9 +33,16 @@ if ((millis () - startTime) >= 16000 ) {
 	r1off ();
 	g2on ();
 }
+if ((millis () - startTime) >= 26000 ) {
+	g2off ();
+	y2on ();
+}	
+if ((millis () - startTime) >= 29000 ) {
+	y1off ();
+	r2on ();
+}	
 	
 }	
-
 function lights (){
 	fill(0, 0, 0);
 	rect(50,50,100,250); //left traffic light
