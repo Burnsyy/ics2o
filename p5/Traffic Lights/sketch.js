@@ -3,12 +3,13 @@ Cory
 Last Updated 2017-05-05
 */
 
+var startTime = 0;
+
 function setup() {
 	createCanvas(400, 400);
 	background(136, 188, 247);
 }
 function draw() {
-var startTime = 0;	
 if (startTime === 0) {
 	lights ();	
 	g1on ();
