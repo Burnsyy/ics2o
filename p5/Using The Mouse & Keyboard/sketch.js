@@ -6,12 +6,8 @@ Last Updated 2017-04-27
 	var colourG = 0;
 	var colourB = 0;
 	var colour = (colourR,colourB,colourG);
-	var bg1 = 242;
-	var bg2 = 242;
-	var bg3 = 242;
 function setup() {
 	createCanvas(400, 400);
-	background(bg1, bg2, bg3);
 }
 	
 function draw() {
