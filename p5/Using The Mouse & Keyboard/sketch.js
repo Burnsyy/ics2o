@@ -31,7 +31,7 @@ function colourSelection () {
 	if (keyIsDown(82)) { //if 'R' is pressed make colour more red
       colourR = colourR + 3;
     }
-	if (keyIsDown(190)) { //if 'E' is pressed make colour less red
+	if (keyIsDown(69)) { //if 'E' is pressed make colour less red
       colourR = colourR - 3;
     }
 	if (keyIsDown(66)) { //if 'B' is pressed make colour more blue
@@ -70,14 +70,14 @@ function background () {
 	fill (bg1, bg2, bg3);
 	rect (-1, -1, 402, 402);
     }
-	if (keyIsDown(190)) { //if '2' is pressed on the numpad make background black
+	if (keyIsDown(98)) { //if '2' is pressed on the numpad make background black
         bg1 = 0;
 	bg2 = 0;
 	bg3 = 0;
 	fill (bg1, bg2, bg3);
 	rect (-1, -1, 402, 402);
     }
-	if (keyIsPressed(78)) { //if '3' is pressed on the numpad make background blue
+	if (keyIsPressed(99)) { //if '3' is pressed on the numpad make background blue
         bg1 = 0;
 	bg2 = 0;
 	bg3 = 255;
