@@ -14,6 +14,7 @@ function setup() {
 }
 	
 function draw() {
+	background ();
 	noStroke ();
 	fill(bg1, bg2, bg3); //create background behind letters
 	rect (308, 0, 44,50);
@@ -21,9 +22,9 @@ function draw() {
 	colourSelection (); //draw colour display on top right
 	//code to crerate drawing
 	if (mouseIsPressed)  {
-      noStroke ();
-      fill (colourR, colourG, colourB);
-      ellipse (mouseX,mouseY,15,15);
+        noStroke ();
+        fill (colourR, colourG, colourB);
+        ellipse (mouseX,mouseY,15,15);
 	}
 }	
 
