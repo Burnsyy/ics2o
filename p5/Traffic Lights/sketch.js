@@ -6,7 +6,8 @@ Last Updated 2017-05-05
 var startTime = 0;
 
 function setup() {
-	createCanvas(400, 400);
+	  var myCanvas = createCanvas(600, 400);
+	  myCanvas.parent('Traffic Lights');
 	background(136, 188, 247);
 }
 function draw() {
