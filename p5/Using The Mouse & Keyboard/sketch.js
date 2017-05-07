@@ -1,4 +1,4 @@
-/* Using the Mouse
+/* Using the Mouse & Keyboard
 Cory 
 Last Updated 2017-04-27
 */
