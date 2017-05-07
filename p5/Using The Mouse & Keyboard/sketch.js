@@ -64,14 +64,14 @@ function colourSelection () {
 }
 
 function background () {
-	if (keyIsPressed(97)) { //if '1' is pressed on the numpad make background white
+	if (keyIsDown(97)) { //if '1' is pressed on the numpad make background white
         bg1 = 255;
 	bg2 = 255;
 	bg3 = 255;
 	fill (bg1, bg2, bg3);
 	rect (-1, -1, 402, 402);
     }
-	if (keyIsPressed(98)) { //if '2' is pressed on the numpad make background black
+	if (keyIsDown(98)) { //if '2' is pressed on the numpad make background black
         bg1 = 0;
 	bg2 = 0;
 	bg3 = 0;
