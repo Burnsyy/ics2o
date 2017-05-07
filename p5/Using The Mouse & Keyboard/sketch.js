@@ -16,7 +16,7 @@ function setup() {
 function draw() {
 	noStroke ();
 	fill(bg1, bg2, bg3); //create background behind letters
-	rect (308, 0,44,50);
+	rect (308, 0, 44,50);
 	stroke (1);
 	colourSelection (); //draw colour display on top right
 	//code to crerate drawing
