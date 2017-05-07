@@ -6,17 +6,15 @@ Last Updated 2017-04-27
 	var colourG = 0;
 	var colourB = 0;
 	var colour = (colourR,colourB,colourG);
-	var bg1 = 242
-	var bg2 = 242
-	var bg3 = 242
-	
+	var bg1 = 242;
+	var bg2 = 242;
+	var bg3 = 242;
 function setup() {
 	createCanvas(400, 400);
 	background(bg1, bg2, bg3);
 }
-		//DONT FORGET COMMENTS
+	
 function draw() {
-	shapeSelection (); //draw shape menu on top left
 	noStroke ();
 	fill(bg1, bg2, bg3); //create background behind letters
 	rect (308, 0,44,50);
@@ -28,16 +26,6 @@ function draw() {
       fill (colourR, colourG, colourB);
       ellipse (mouseX,mouseY,15,15);
 	}
-}
-
-function shapeSelection () {
-	noFill();
-	rect(0,0,36,110); 
-	fill(colourR, colourG, colourB);
-	rect(3,3,15,15);
-	ellipse(10,33,15,15);
-	rect(3,45,30,30);
-	ellipse(17,94,30,30);
 }	
 
 function colourSelection () {
@@ -77,53 +65,73 @@ function colourSelection () {
 
 function background () {
 	if (keyIsPressed(97)) { //if '1' is pressed on the numpad make background white
-        bg1 = 255
-	bg2 = 255
-	bg3 = 255
+        bg1 = 255;
+	bg2 = 255;
+	bg3 = 255;
+	fill (bg1, bg2, bg3);
+	rect (-1, -1, 402, 402);
     }
 	if (keyIsPressed(98)) { //if '2' is pressed on the numpad make background black
-        bg1 = 0
-	bg2 = 0
-	bg3 = 0
+        bg1 = 0;
+	bg2 = 0;
+	bg3 = 0;
+	fill (bg1, bg2, bg3);
+	rect (-1, -1, 402, 402);
     }
 	if (keyIsPressed(99)) { //if '3' is pressed on the numpad make background blue
-        bg1 = 0
-	bg2 = 0
-	bg3 = 255
+        bg1 = 0;
+	bg2 = 0;
+	bg3 = 255;
+	fill (bg1, bg2, bg3);
+	rect (-1, -1, 402, 402);
     }
 	if (keyIsPressed(100)) { //if '4' is pressed on the numpad make background red
-        bg1 = 255
-	bg2 = 0
-	bg3 = 0
+        bg1 = 255;
+	bg2 = 0;
+	bg3 = 0;
+	fill (bg1, bg2, bg3);
+	rect (-1, -1, 402, 402);
     }
 	if (keyIsPressed(101)) { //if '5' is pressed on the numpad make background orange
-        bg1 = 255
-	bg2 = 165
-	bg3 = 0
+        bg1 = 255;
+	bg2 = 165;
+	bg3 = 0;
+	fill (bg1, bg2, bg3);
+	rect (-1, -1, 402, 402);
     }
 	if (keyIsPressed(102)) { //if '6' is pressed on the numpad make background yellow
-        bg1 = 255
-	bg2 = 255
-	bg3 = 0
+        bg1 = 255;
+	bg2 = 255;
+	bg3 = 0;
+	fill (bg1, bg2, bg3);
+	rect (-1, -1, 402, 402);
     }
 	if (keyIsPressed(103)) { //if '7' is pressed on the numpad make background green
-        bg1 = 0
-	bg2 = 100
-	bg3 = 0
+        bg1 = 0;
+	bg2 = 100;
+	bg3 = 0;
+	fill (bg1, bg2, bg3);
+	rect (-1, -1, 402, 402);
     }
 	if (keyIsPressed(104)) { //if '8' is pressed on the numpad make background purple
-        bg1 = 160
-	bg2 = 32
-	bg3 = 240
+        bg1 = 160;
+	bg2 = 32;
+	bg3 = 240;
+	fill (bg1, bg2, bg3);
+	rect (-1, -1, 402, 402);
     }
 	if (keyIsPressed(105)) { //if '9' is pressed on the numpad make background pink
-        bg1 = 255
-	bg2 = 20
-	bg3 = 147
+        bg1 = 255;
+	bg2 = 20;
+	bg3 = 147;
+	fill (bg1, bg2, bg3);
+	rect (-1, -1, 402, 402);
     }
 	if (keyIsPressed(96)) { //if '0' is pressed on the numpad make background gray
-        bg1 = 190
-	bg2 = 190
-	bg3 = 190
+        bg1 = 190;
+	bg2 = 190;
+	bg3 = 190;
+	fill (bg1, bg2, bg3);
+	rect (-1, -1, 402, 402);
     }
 }
