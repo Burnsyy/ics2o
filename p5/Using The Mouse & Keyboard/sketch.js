@@ -65,11 +65,12 @@ function colourSelection () {
 
 function background () {
 	if (keyIsDown(97)) { //if '1' is pressed on the numpad make background white
-        var  bg1 = 255;
-	var bg2 = 255;
-	var bg3 = 255;
+        bg1 = 255;
+	bg2 = 255;
+	bg3 = 255;
+	noStroke();
 	fill (bg1, bg2, bg3);
-	rect (-1, -1, 402, 402);
+	rect (0, 0, 400, 400);
     }
 	if (keyIsDown(98)) { //if '2' is pressed on the numpad make background black
         bg1 = 0;
@@ -79,9 +80,9 @@ function background () {
 	rect (-1, -1, 402, 402);
     }
 	if (keyIsPressed(99)) { //if '3' is pressed on the numpad make background blue
-        var bg1 = 0;
-	var bg2 = 0;
-	var bg3 = 255;
+        bg1 = 0;
+	bg2 = 0;
+	bg3 = 255;
 	fill (bg1, bg2, bg3);
 	rect (-1, -1, 402, 402);
     }
