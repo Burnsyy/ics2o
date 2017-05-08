@@ -12,9 +12,8 @@ Last Updated 2017-04-27
 function setup() {
 	createCanvas(400, 400);
 }
-	
 function draw() {
-	background (bg1, bg2, bg3)
+	background (bg1, bg2, bg3);
 	noStroke ();
 	fill(bg1, bg2, bg3); //create background behind letters
 	rect (308, 0, 44,50);
