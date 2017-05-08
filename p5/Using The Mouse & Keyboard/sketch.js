@@ -14,7 +14,7 @@ function setup() {
 }
 	
 function draw() {
-	background ();
+	background (bg1, bg2, bg3)
 	noStroke ();
 	fill(bg1, bg2, bg3); //create background behind letters
 	rect (308, 0, 44,50);
@@ -26,6 +26,56 @@ function draw() {
         fill (colourR, colourG, colourB);
         ellipse (mouseX,mouseY,15,15);
 	}
+	if (keyIsDown(97)) { //if '1' is pressed on the numpad make background white
+        bg1 = 255;
+	bg2 = 255;
+	bg3 = 255;
+    }
+	if (keyIsDown(98)) { //if '2' is pressed on the numpad make background black
+        bg1 = 0;
+	bg2 = 0;
+	bg3 = 0;
+    }
+	if (keyIsPressed(99)) { //if '3' is pressed on the numpad make background blue
+        bg1 = 0;
+	bg2 = 0;
+	bg3 = 255;
+    }
+	if (keyIsPressed(100)) { //if '4' is pressed on the numpad make background red
+        bg1 = 255;
+	bg2 = 0;
+	bg3 = 0;
+    }
+	if (keyIsPressed(101)) { //if '5' is pressed on the numpad make background orange
+        bg1 = 255;
+	bg2 = 165;
+	bg3 = 0;
+    }
+	if (keyIsPressed(102)) { //if '6' is pressed on the numpad make background yellow
+        bg1 = 255;
+	bg2 = 255;
+	bg3 = 0;
+    }
+	if (keyIsPressed(103)) { //if '7' is pressed on the numpad make background green
+        bg1 = 0;
+	bg2 = 100;
+	bg3 = 0;
+    }
+	if (keyIsPressed(104)) { //if '8' is pressed on the numpad make background purple
+        bg1 = 160;
+	bg2 = 32;
+	bg3 = 240;
+    }
+	if (keyIsPressed(105)) { //if '9' is pressed on the numpad make background pink
+        bg1 = 255;
+	bg2 = 20;
+	bg3 = 147;
+    }
+	if (keyIsPressed(96)) { //if '0' is pressed on the numpad make background gray
+        bg1 = 190;
+	bg2 = 190;
+	bg3 = 190;
+    }
 }	
 
 function colourSelection () {
@@ -61,78 +111,4 @@ function colourSelection () {
 	text ("R:",310,10); //display 'R:' beside amount of red in colour
 	text ("G:",310,30); //display 'G:' beside amount of green in colour
 	text ("B:",310,50); //display 'B:' beside amount of blue in colour
-}
-
-function background () {
-	if (keyIsDown(97)) { //if '1' is pressed on the numpad make background white
-        bg1 = 255;
-	bg2 = 255;
-	bg3 = 255;
-	noStroke();
-	fill (bg1, bg2, bg3);
-	rect (0, 0, 400, 400);
-    }
-	if (keyIsDown(98)) { //if '2' is pressed on the numpad make background black
-        bg1 = 0;
-	bg2 = 0;
-	bg3 = 0;
-	fill (bg1, bg2, bg3);
-	rect (-1, -1, 402, 402);
-    }
-	if (keyIsPressed(99)) { //if '3' is pressed on the numpad make background blue
-        bg1 = 0;
-	bg2 = 0;
-	bg3 = 255;
-	fill (bg1, bg2, bg3);
-	rect (-1, -1, 402, 402);
-    }
-	if (keyIsPressed(100)) { //if '4' is pressed on the numpad make background red
-        bg1 = 255;
-	bg2 = 0;
-	bg3 = 0;
-	fill (bg1, bg2, bg3);
-	rect (-1, -1, 402, 402);
-    }
-	if (keyIsPressed(101)) { //if '5' is pressed on the numpad make background orange
-        bg1 = 255;
-	bg2 = 165;
-	bg3 = 0;
-	fill (bg1, bg2, bg3);
-	rect (-1, -1, 402, 402);
-    }
-	if (keyIsPressed(102)) { //if '6' is pressed on the numpad make background yellow
-        bg1 = 255;
-	bg2 = 255;
-	bg3 = 0;
-	fill (bg1, bg2, bg3);
-	rect (-1, -1, 402, 402);
-    }
-	if (keyIsPressed(103)) { //if '7' is pressed on the numpad make background green
-        bg1 = 0;
-	bg2 = 100;
-	bg3 = 0;
-	fill (bg1, bg2, bg3);
-	rect (-1, -1, 402, 402);
-    }
-	if (keyIsPressed(104)) { //if '8' is pressed on the numpad make background purple
-        bg1 = 160;
-	bg2 = 32;
-	bg3 = 240;
-	fill (bg1, bg2, bg3);
-	rect (-1, -1, 402, 402);
-    }
-	if (keyIsPressed(105)) { //if '9' is pressed on the numpad make background pink
-        bg1 = 255;
-	bg2 = 20;
-	bg3 = 147;
-	fill (bg1, bg2, bg3);
-	rect (-1, -1, 402, 402);
-    }
-	if (keyIsPressed(96)) { //if '0' is pressed on the numpad make background gray
-        bg1 = 190;
-	bg2 = 190;
-	bg3 = 190;
-	fill (bg1, bg2, bg3);
-	rect (-1, -1, 402, 402);
-    }
 }
