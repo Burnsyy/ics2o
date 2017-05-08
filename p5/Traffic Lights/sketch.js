@@ -8,7 +8,7 @@ var startTime = 0;
 function setup() {
 	  var myCanvas = createCanvas(400, 400);
 	  myCanvas.parent('Traffic Lights');
-	background(136, 188, 247);
+	  background(136, 188, 247);
 }
 function draw() {
 if (startTime === 0) {
