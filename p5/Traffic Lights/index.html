@@ -1,35 +1,135 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  
+	<link rel="shortcut icon" type="image/png" href="https://d30y9cdsu7xlg0.cloudfront.net/png/7803-200.png"> 
+	<title> Traffic Lights</title>
 	<meta charset="UTF-8">
-  
 	<script language="javascript" type="text/javascript" src="../libraries/p5.js"></script>
-  	
-
-	<!-- uncomment lines below to include extra p5 libraries -->
-  
-	<!--<script language="javascript" src="../libraries/p5.dom.js"></script>-->
-  
-	<!--<script language="javascript" src="../libraries/p5.sound.js"></script>-->
- 
- 
 	<script language="javascript" type="text/javascript" src="sketch.js"></script>
-  
-
-	<!-- This removes any default padding and style. You might only need one of these values set. -->
-  
 	<style> 
-		body {padding: 0; margin: 0;} 
+Body {
+    padding: 0; margin: 0;
+    background-color: lightblue;
+    font-style: Georgia;
+    font-size:20px; 
+	
+    border-right-color:#004c77;
+    border-right-width:95px;    
+    border-right-style:solid;
+
+    border-left-color:#004c77;
+    border-left-width:95px;
+    border-left-style:solid;
+	font-size: 26px;
+}
+ul.a {
+	list-style-image: url('http://www.woollettaquanet.info/SheetMusic/musicimages/sqred.gif');
+	color: darkgreen;
+}
+ul.b {
+	list-style-image: url('http://www.woollettaquanet.info/SheetMusic/musicimages/sqyellow.gif');
+	color: darkgreen;
+}
+ul.c {
+	list-style-image: url('http://www.woollettaquanet.info/SheetMusic/musicimages/sqgreen.gif');
+	color: darkgreen;
+}
+p {
+	color: darkgreen;
+}
+h1, h2 {
+	color: purple;
+}
+h1 {
+    text-align:center;
+    border: 14px solid lightblue;	
+    font-size: 65px;
+}
+h2 {
+    text-indent: 70px;
+    font-size: 40px;
+    color:#0800a0;
+}
 	</style>
-
 </head>
-
-
-
 <body>
-	<div id='Traffic Lights'></div>
+		<h1> Traffic Lights </h1>
+	<p> This website will tell you everything you need to know about traffic lights from how they work to how they keep drivers safe. </p>
+<br>		
+		<h2> How They Work </h2>
+	<ul class="a">
+		<li> Light 1 is green while Light 2 is red</li>
+	</ul>
+	<ul class="b">
+		<li> After 35 seconds of being green, Light 1 turns yellow. Light 2 is still red</li>
+	</ul>
+	<ul class="c">
+		<li> Light 1 is yellow for 3 seconds then turns red, Light 2 is still red</li>
+	</ul>
+	<ul class="a">
+		<li> After 2 seconds of Light 1 being red, Light 2 turns green for 35 seconds while Light 1 stays red</li>
+	</ul>
+	<ul class="b">	
+		<li> After Light 2 is green for 35 seconds, it turns yellow for 3 seconds, then red, meanwhile Light 1 is still red</li>
+	</ul>
+	<ul class="c">	
+		<li> After Light 2 is red for 2 seconds Light 1 turns green </li>
+	</ul>
+	<ul class="a">	
+		<li> Repeat </li>
+	</ul>	
+<br>
+		<h2> Arduino Code for Traffic Lights </h2>
+	<p> This is the code Jaeho and I have made to create a very simple arduino version of traffic lights. The only change we have made is to have green lights on for 10 seconds instead of 35 seconds to speed up the process. </p>
+<pre>
+/* Traffic Lights
+Cory and Jaeho
+2017-05-04
+*/
+
+int ledR = 8; //NS red light 
+int ledY = 9; //NS yellow ligh
+int ledG = 10; //NS green light
+int ledR2 = 11; //EW red light
+int ledY2 = 12; //EW yellow light
+int ledG2 = 13; //EW green light
+
+void setup() {
+ pinMode (ledR, OUTPUT);
+ pinMode (ledY, OUTPUT);
+ pinMode (ledG, OUTPUT);
+ pinMode (ledR2, OUTPUT);
+ pinMode (ledY2, OUTPUT);
+ pinMode (ledG2, OUTPUT);    
+}
+
+void loop() {  
+  digitalWrite(ledR2, HIGH); //turns EW red light on
+  digitalWrite(ledG, HIGH); //turns NS green light on
+  delay(10000); //keep NS green light and EW red light on for 10 seconds
+  digitalWrite(ledG, LOW); //turns NS green light off
+  digitalWrite(ledY, HIGH); //turns NS yellow light on
+  delay(3000); //keep NS yellow light and EW red light on for 3 seconds
+  digitalWrite(ledY, LOW); //turn off NS yellow light
+  digitalWrite(ledR, HIGH); //turn on NS red light
+  delay(2000);//keep NS red light and EW red light on for 3 seconds
+  digitalWrite(ledR2, LOW); //turn off EW red light
+  digitalWrite(ledG2, HIGH); //turn EW green light on
+  delay(10000);//keep NS red light and EW green light on for 10 seconds
+  digitalWrite(ledG2, LOW); //turn EW green light off
+  digitalWrite(ledY2, HIGH); //turn EW yellow light on
+  delay(3000);//keep NS red light and EW yellow light on for 3 seconds
+  digitalWrite(ledY2, LOW); //turn EW yellow light off 
+  digitalWrite(ledR2, HIGH); //turns EW red light on
+  delay(2000);//keep NS red light and EW red light on for 3 seconds
+  digitalWrite(ledR, LOW); //turns NS red light off
+} 
+</pre>	
+<br>
+		<h2> Animation </h2>
+<p> Here is an animation I have created to show how traffic lights work </p>
+<div id='Traffic Lights'></div>
+		<h2> Essay </h2>
 </body>
 
 </html>
