@@ -12,11 +12,9 @@ Last Updated 2017-04-27
 function setup() {
 	createCanvas(400, 400);
 }
+
 function draw() {
-	background (bg1, bg2, bg3);
-	noStroke ();
-	fill(bg1, bg2, bg3); //create background behind letters
-	rect (308, 0, 44,50);
+	background(bg1, bg2, bg3);
 	stroke (1);
 	colourSelection (); //draw colour display on top right
 	//code to crerate drawing
@@ -35,42 +33,42 @@ function draw() {
 	bg2 = 0;
 	bg3 = 0;
     }
-	if (keyIsPressed(99)) { //if '3' is pressed on the numpad make background blue
+	if (keyIsDown(99)) { //if '3' is pressed on the numpad make background blue
         bg1 = 0;
 	bg2 = 0;
 	bg3 = 255;
     }
-	if (keyIsPressed(100)) { //if '4' is pressed on the numpad make background red
+	if (keyIsDown(100)) { //if '4' is pressed on the numpad make background red
         bg1 = 255;
 	bg2 = 0;
 	bg3 = 0;
     }
-	if (keyIsPressed(101)) { //if '5' is pressed on the numpad make background orange
+	if (keyIsDown(101)) { //if '5' is pressed on the numpad make background orange
         bg1 = 255;
 	bg2 = 165;
 	bg3 = 0;
     }
-	if (keyIsPressed(102)) { //if '6' is pressed on the numpad make background yellow
+	if (keyIsDown(102)) { //if '6' is pressed on the numpad make background yellow
         bg1 = 255;
 	bg2 = 255;
 	bg3 = 0;
     }
-	if (keyIsPressed(103)) { //if '7' is pressed on the numpad make background green
+	if (keyIsDown(103)) { //if '7' is pressed on the numpad make background green
         bg1 = 0;
 	bg2 = 100;
 	bg3 = 0;
     }
-	if (keyIsPressed(104)) { //if '8' is pressed on the numpad make background purple
+	if (keyIsDown(104)) { //if '8' is pressed on the numpad make background purple
         bg1 = 160;
 	bg2 = 32;
 	bg3 = 240;
     }
-	if (keyIsPressed(105)) { //if '9' is pressed on the numpad make background pink
+	if (keyIsDown(105)) { //if '9' is pressed on the numpad make background pink
         bg1 = 255;
 	bg2 = 20;
 	bg3 = 147;
     }
-	if (keyIsPressed(96)) { //if '0' is pressed on the numpad make background gray
+	if (keyIsDown(96)) { //if '0' is pressed on the numpad make background gray
         bg1 = 190;
 	bg2 = 190;
 	bg3 = 190;
