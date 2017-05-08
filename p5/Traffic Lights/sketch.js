@@ -11,6 +11,7 @@ function setup() {
 	background(136, 188, 247);
 }
 function draw() {
+	startTime = 0;
 if (startTime === 0) {
 	lights ();	
 	g1on ();
