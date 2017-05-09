@@ -75,7 +75,7 @@ function colourSelection () {
 }
 
 function bg () {
-  if (mouseIsPressed && mouseX <= 350 && mouseY <= 50) { //if mouse is pressed on the colour selector, than make it so background can be changed		
+  if (mouseIsPressed && mouseX >= 350 && mouseY <= 50) { //if mouse is pressed on the colour selector, than make it so background can be changed		
 	if (keyIsDown(97)) { //if '1' is pressed on the numpad make background white
         bg1 = 255;
 	bg2 = 255;
