@@ -3,7 +3,7 @@ Cory
 Last Updated 2017-05-09
 */
 
-var startTime = 0;
+var startTime = 0; //create variable called 'startTime' and set value to 0
 
 function setup() {
 	var myCanvas = createCanvas(400, 400);
