@@ -10,12 +10,12 @@ Last Updated 2017-04-27
 	bg2 = 242
 	bg3 = 242
 	
-function setup() {
+function setup() { //setup canvas
 	createCanvas(400, 400);
 	background(bg1, bg2, bg3);
 }
 		
-function draw() {
+function draw() { //draw loop
 	bg ();
 	noStroke ();
 	fill(242, 242, 242); //create background behind letters
@@ -24,22 +24,12 @@ function draw() {
 	colourSelection (); //draw colour display on top right
 	if (mouseIsPressed)  {
 	noStroke ();
-	fill (colourR, colourG, colourB);
- 	ellipse (mouseX,mouseY,15,15);
+	fill (colourR, colourG, colourB); //fill circles with user created colour
+ 	ellipse (mouseX,mouseY,15,15); //created small circle wherever mouse is pressed
 	}
 }
 
-function shapeSelection () {
-	noFill();
-	rect(0,0,36,110); 
-	fill(colourR, colourG, colourB);
-	rect(3,3,15,15);
-	ellipse(10,33,15,15);
-	rect(3,45,30,30);
-	ellipse(17,94,30,30);
-}	
-
-function colourSelection () {
+function colourSelection () { //function to create users colour. Buttons 'r' 'e' 'g' 'f' 'b' 'v' and 'spacebar' are used for this function
 	if (keyIsDown(82)) { //if 'R' is pressed make colour more red
       colourR = colourR + 3;
     }
@@ -74,7 +64,7 @@ function colourSelection () {
 	text ("B:",310,50); //display 'B:' beside amount of blue in colour
 }
 
-function bg () {
+function bg () { //function to change background colour. function looks for mouse to be pressed on top righ corner and numbers on numpad to be pressed.
   if (mouseIsPressed && mouseX >= 350 && mouseY <= 50) { //if mouse is pressed on the colour selector, than make it so background can be changed		
 	if (keyIsDown(97)) { //if '1' is pressed on the numpad make background white
         bg1 = 255;
