@@ -1,6 +1,6 @@
 /* Traffic Lights
 Cory 
-Last Updated 2017-05-05
+Last Updated 2017-05-09
 */
 
 var startTime = 0;
