@@ -3,10 +3,10 @@ Cory
 Last Updated 2017-05-12
 */
 
-var posX = ;
-var posY = ;
-var speedX = ;
-var speedY = ;
+var posX = 50;
+var posY = 50;
+var speedX = 0;
+var speedY = 0;
 var score = 0;
 var setting = 1;
 
