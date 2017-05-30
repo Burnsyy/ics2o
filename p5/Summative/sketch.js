@@ -7,6 +7,8 @@ var posX = ;
 var posY = ;
 var speedX = ;
 var speedY = ;
+var score = 0;
+var setting = 1;
 
 
 function setup() {
@@ -15,7 +17,25 @@ function setup() {
 	background(136, 188, 247); //create background 
 }
 function draw() {
-
+	scoreDisplay ();
 }	
 
-function ()
+function player() {
+	fill (107, 56, 194);
+	ellipse(x,y,50,50);
+	fill(255, 128, 0);
+	triangle (x-16.5,y-18.6,x,y,x+16.5,y-18.6);
+	triangle (x+23.8,y+6.2,x,y,x+23.8,y-6.2);
+	triangle (x-16.5,y+18.6,x,y,x+16.5,y+18.6);
+	triangle (x-23.8,y+6.2,x,y,x-23.8,y-6.2); 	
+}	
+
+function scoreDisplay () {
+	score = score + 0.05;
+	fill(196, 182, 182);
+	noStroke();
+	rect(0, 0, 68, 17);
+	fill(255, 0, 0);
+	text ("Score:", 1,13);
+	text (round(score), 38,13);	
+}
