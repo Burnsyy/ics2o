@@ -17,6 +17,7 @@ function setup() {
 	background(136, 188, 247); //create background 
 }
 function draw() {
+	player ();
 	scoreDisplay ();
 }	
 
