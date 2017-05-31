@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="https://d30y9cdsu7xlg0.cloudfront.net/png/7803-200.png"> 
+<title> Instrument </title>
+	<style>
+Body {
+    background-color: lightblue;
+    font-style: Georgia;
+    font-size:20px; 
+	
+    border-right-color:#004c77;
+    border-right-width:95px;    
+    border-right-style:solid;
+
+    border-left-color:#004c77;
+    border-left-width:95px;
+    border-left-style:solid;
+	font-size: 26px;
+}
+ul.a {
+	list-style-image: url('http://www.woollettaquanet.info/SheetMusic/musicimages/sqred.gif');
+	color: darkgreen;
+}
+ul.b {
+	list-style-image: url('http://www.woollettaquanet.info/SheetMusic/musicimages/sqyellow.gif');
+	color: darkgreen;
+}
+ul.c {
+	list-style-image: url('http://www.woollettaquanet.info/SheetMusic/musicimages/sqgreen.gif');
+	color: darkgreen;
+}
+p {
+	color: darkgreen;
+}
+h1, h2 {
+	color: purple;
+}
+h1 {
+    text-align:center;
+    border: 14px solid lightblue;	
+    font-size: 65px;
+}
+h2 {
+	text-indent: 70px;
+    font-size: 40px;
+    color:#0800a0;
+}
+	</style>
+</head>
+<body>
+		<h1> Instruments </h1>
+	<p> This website will tell you everything you need to know about traffic lights from how they work to how they keep drivers safe. </p>
+<br>		
+		<h2> How It Works </h2>
+
+		<h2> Arduino Code For Instrument </h2>
+	<p> This is the code Jaeho and I have made to create a very simple arduino version of traffic lights. The only change we have made is to have green lights on for 10 seconds instead of 35 seconds to speed up the process. </p>
+<pre>
+  int buttonA = 2;
+  int buttonB = 3;
+  int buttonC = 4;
+  int buttonD = 5;
+  int buttonE = 6;
+  int buttonF = 7;
+  int buttonG = 8;
+
+void setup() {
+pinMode (buttonA, OUTPUT);
+pinMode (buttonB, OUTPUT);
+pinMode (buttonC, OUTPUT);
+pinMode (buttonD, OUTPUT);
+pinMode (buttonE, OUTPUT);
+pinMode (buttonF, OUTPUT);
+pinMode (buttonG, OUTPUT);
+}
+
+void loop() {
+  if (digitalRead(buttonA)==HIGH) {
+    c ();
+  }
+  if (digitalRead(buttonB)==HIGH) {
+    d ();
+  }
+  if (digitalRead(buttonC)==HIGH) {
+    e ();
+  }
+  if (digitalRead(buttonD)==HIGH) {
+    f ();
+  }
+  if (digitalRead(buttonE)==HIGH) {
+    g ();
+  }
+  if (digitalRead(buttonF)==HIGH) {
+    a ();
+  }
+  if (digitalRead(buttonG)==HIGH) {
+    b ();
+  }
+}
+void a () {
+  // play the tone using pin 13 with frequency 415 Hz for 500 ms = 0.5 seconds
+  tone(13, 440, 30);
+}
+void b () {
+  // play the tone using pin 13 with frequency 415 Hz for 500 ms = 0.5 seconds
+  tone(13, 494, 30);
+}
+void c () {
+  // play the tone using pin 13 with frequency 415 Hz for 500 ms = 0.5 seconds
+  tone(13, 523, 30);
+}
+void d () {
+  // play the tone using pin 13 with frequency 415 Hz for 500 ms = 0.5 seconds
+  tone(13, 587, 30);
+}
+void e () {
+  // play the tone using pin 13 with frequency 415 Hz for 500 ms = 0.5 seconds
+  tone(13, 659, 30);
+}
+void f () {
+  // play the tone using pin 13 with frequency 415 Hz for 500 ms = 0.5 seconds
+  tone(13, 698, 30);
+}
+void g () {
+  // play the tone using pin 13 with frequency 415 Hz for 500 ms = 0.5 seconds
+  tone(13, 784, 30);
+}
+
+</pre>	
+</body>
+</html>
