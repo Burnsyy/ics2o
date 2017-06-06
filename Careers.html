@@ -23,10 +23,20 @@ Body {
 	font-size: 26px;
 }
 table {
-	width:100%
+    width:100%
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
 }
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}	
+th {
+    background-color:#1b5113;
+    color: white;
+}	
 p {
-	color: darkred;
+    color: darkred;
 }
 h1 {
     text-align:center;
@@ -34,7 +44,7 @@ h1 {
 	color: #560000;
 }
 h2 {
-	text-indent: 70px;
+    text-indent: 70px;
     font-size: 40px;
     color:#0800a0;
 }
@@ -48,8 +58,8 @@ h2 {
 	<p> Following are jobs that use HTML and CSS:</p>
 <table> 
   <tr>
-	  <th> </th>
-	  <th> </th>
+	  <th> Job</th>
+	  <th> Company </th>
 	  <th> </th>
 	  <th> </th>
 	  <th> </th>
