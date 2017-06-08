@@ -23,12 +23,12 @@ function draw() {
 
 function player() {
 	fill (107, 56, 194);
-	ellipse(x,y,50,50);
+	ellipse(posX,posY,50,50);
 	fill(255, 128, 0);
-	triangle (x-16.5,y-18.6,x,y,x+16.5,y-18.6);
-	triangle (x+23.8,y+6.2,x,y,x+23.8,y-6.2);
-	triangle (x-16.5,y+18.6,x,y,x+16.5,y+18.6);
-	triangle (x-23.8,y+6.2,x,y,x-23.8,y-6.2); 	
+	triangle (posX-16.5,posY-18.6,posX,posY,posX+16.5,posY-18.6);
+	triangle (posX+23.8,posY+6.2,posX,posY,posX+23.8,posY-6.2);
+	triangle (posX-16.5,posY+18.6,posX,posY,posX+16.5,posY+18.6);
+	triangle (posX-23.8,posY+6.2,posX,posY,posX-23.8,posY-6.2); 	
 }	
 
 function scoreDisplay () {
