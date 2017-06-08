@@ -32,7 +32,7 @@ function player () {
     if (y >= 325) {
         speedY = 0;
 }
-    if ( mouseIsPressed) {
+    if (keyIsDown (32)) {
         if (sttus === 1) {
             speedY = 4;
             sttus = 2;
