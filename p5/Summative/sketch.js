@@ -1,6 +1,6 @@
 /* Summative Game
 Cory 
-Last Updated 2017-05-12
+Last Updated 2017-06-08
 */
 
 var x = 50;
@@ -46,7 +46,7 @@ function player () {
             sttus = 1;
         }
     }
-};    
+}    
 
 function setting () {
     if (mouseIsPressed && mouseX === 1 && mouseY=== 1) {
@@ -113,7 +113,7 @@ function display () {
 	    fill (207, 8, 8);
 	    ellipse (394,7,10,10);
 	}
-};
+}
 
 function bckground () {
     noStroke();
@@ -226,11 +226,11 @@ function bckground () {
     fill(19, 107, 31);
     triangle(40+40+40+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40+40+40,385);
     
-};
+}
 
 function draw() {
     background(4, 206, 217);
     player ();
     bckground (); 
     display ();
-};
+}
