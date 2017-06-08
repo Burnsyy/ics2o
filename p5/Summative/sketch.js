@@ -13,6 +13,11 @@ var speedY = 0;
 var sttus = 2;
 var lives = 5;
 
+function setup() {
+	var myCanvas = createCanvas(400, 400);
+	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
+}
+
 function player () {
     fill (107, 56, 194);
     ellipse(x,y,50,50);  
