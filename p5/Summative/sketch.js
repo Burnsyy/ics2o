@@ -12,10 +12,17 @@ var speedX = 0;
 var speedY = 0;
 var sttus = 2;
 var lives = 5;
+var objectX = 200;
+var objectY = 200;
 
 function setup() {
 	var myCanvas = createCanvas(400, 400);
 	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
+}
+
+function preload() {
+	music = loadSound('techological.mp3');  // Loads the sound file into the variable
+
 }
 
 function player () {
