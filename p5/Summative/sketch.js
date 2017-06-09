@@ -179,8 +179,8 @@ function bckground() {
     
     noStroke();
     fill(c1, c2, c3);
-    rect(0,0,400,50);
-    rect(0,350,400,50);
+    rect(200,25,400,50);
+    rect(200,375,400,50);
     
     fill(c1A, c2A, c3A);
     triangle(0,50,20,50,20,15);
@@ -291,7 +291,7 @@ function bckground() {
 
 function obst () {
     fill(102, 107, 107);
-    rect(objX1,objY1,40,40);
+    rect(objX1+20,objY1+20,40,40);
     fill(115, 115, 115);
     triangle(objX1,objY1,objX1+40,objY1,objX1+40,objY1+40);
 
@@ -303,7 +303,7 @@ function obst () {
     }
     if (score >= 15) {
         fill(102, 107, 107);
-        rect(objX2,objY2,40,40);
+        rect(objX2+20,objY2+20,40,40);
         fill(115, 115, 115);
         triangle(objX2,objY2,objX2+40,objY2,objX2+40,objY2+40);
 		objX2 = objX2 + objectSpeed + 0.1;
@@ -315,7 +315,7 @@ function obst () {
     
     if (score >= 30) {
         fill(102, 107, 107);
-        rect(objX3,objY3,40,40);
+        rect(objX3+20,objY3+20,40,40);
         fill(115, 115, 115);
         triangle(objX3,objY3,objX3+40,objY3,objX3+40,objY3+40);
 		objX3 = objX3 + objectSpeed + 0.2;
@@ -327,7 +327,7 @@ function obst () {
     
     if (score >= 40) {
         fill(102, 107, 107);
-        rect(objX4,objY4,40,40);
+        rect(objX4+20,objY4+20,40,40);
         fill(115, 115, 115);
         triangle(objX4,objY4,objX4+40,objY4,objX4+40,objY4+40);
 		objX4 = objX4 + objectSpeed + 0.3;
@@ -340,16 +340,24 @@ function obst () {
     }
     
     if ((abs(x-objX1)<40) && (abs(y-objY1)<40)) {
+	objX1 = 500;
+	objY1 = random(400,500);
         lives = lives - 1;    
     }
 	if ((abs(x-objX2)<40) && (abs(y-objY2)<40)) {
-        lives = lives - 1;    
+	objX2 = 500;
+	objY2 = random(400,500);
+	lives = lives - 1;
     }
 	if ((abs(x-objX3)<40) && (abs(y-objY3)<40)) {
-        lives = lives - 1;    
+	objX3 = 500;
+	objY3 = random(400,500); 
+	lives = lives - 1;
     }
 	if ((abs(x-objX4)<40) && (abs(y-objY4)<40)) {
-        lives = lives - 1;    
+	objX4 = 500;
+	objY4 = random(400,500);   
+	lives = lives - 1; 
     }
 }
 
