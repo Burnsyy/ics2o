@@ -6,7 +6,7 @@ Last Updated 2017-05-12
 var x = 50;
 var y = 200;
 var setting = 3;
-var screen = 0;
+var screen = 1;
 var score = 0;
 var speedX = 0;
 var speedY = 0;
@@ -36,7 +36,7 @@ function setup() {
 	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
 	rectMode(CENTER);
 }
-
+	if (setting === 2) {
 function player () {
     fill (107, 56, 194);
     ellipse(x,y,40,40);  
@@ -341,26 +341,26 @@ function obst () {
     
     if ((abs(x-objX1)<40) && (abs(y-objY1)<40)) {
 	objX1 = 500;
-	objY1 = random(400,500);
+	objY1 = random(70,330);
         lives = lives - 1;    
     }
 	if ((abs(x-objX2)<40) && (abs(y-objY2)<40)) {
 	objX2 = 500;
-	objY2 = random(400,500);
+	objY2 = random(70,330);
 	lives = lives - 1;
     }
 	if ((abs(x-objX3)<40) && (abs(y-objY3)<40)) {
 	objX3 = 500;
-	objY3 = random(400,500); 
+	objY3 = random(70,330); 
 	lives = lives - 1;
     }
 	if ((abs(x-objX4)<40) && (abs(y-objY4)<40)) {
 	objX4 = 500;
-	objY4 = random(400,500);   
+	objY4 = random(70,330);   
 	lives = lives - 1; 
     }
 }
-
+	} //end of if setting = 2
 function draw() {
     background(4, 206, 217);
     player ();
