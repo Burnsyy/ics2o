@@ -1,25 +1,25 @@
 /* Summative Game
 Cory 
-Last Updated 2017-06-09
+Last Updated 2017-05-12
 */
 
 var x = 50;
 var y = 200;
-var setting = 2;
+var setting = 3;
 var screen = 0;
 var score = 0;
 var speedX = 0;
 var speedY = 0;
 var sttus = 2;
 var lives = 5;
-var objX1 = 400;
-var objY1 = 400;
-var objX2 = 400;
-var objY2 = 400;
-var objX3 = 400;
-var objY3 = 400;
-var objX4 = 400;
-var objY4 = 400;
+var objX1 = 500;
+var objY1 = 500;
+var objX2 = 501;
+var objY2 = 501;
+var objX3 = 502;
+var objY3 = 502;
+var objX4 = 503;
+var objY4 = 503;
 var objectSpeed = -3.5;
 var c1 = 0;
 var c2 = 0;
@@ -34,17 +34,14 @@ var c3B = 0;
 function setup() {
 	var myCanvas = createCanvas(400, 400);
 	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
+	rectMode(CENTER);
 }
 
 function player () {
     fill (107, 56, 194);
-    ellipse(x,y,50,50);  
+    ellipse(x,y,40,40);  
     noStroke ();
     fill(255, 128, 0);
-    triangle (x-16.5,y-18.6,x,y,x+16.5,y-18.6);
-    triangle (x+23.8,y+6.2,x,y,x+23.8,y-6.2);
-    triangle (x-16.5,y+18.6,x,y,x+16.5,y+18.6);
-    triangle (x-23.8,y+6.2,x,y,x-23.8,y-6.2);
     
     x = x + speedX;
     y = y + speedY;
@@ -55,7 +52,10 @@ function player () {
     if (y >= 325) {
         speedY = 0;
 }
-    if ( mousePressed) {
+}
+
+function keyTyped () {
+    if ( key === 'w') {
         if (sttus === 1) {
             speedY = 4;
             sttus = 2;
@@ -64,10 +64,10 @@ function player () {
             sttus = 1;
         }
     }
-}    
+} 
 
 function setting () {
-    if (mousePressed && mouseX === 1 && mouseY=== 1) {
+    if (mouseIsPressed && mouseX === 1 && mouseY=== 1) {
     setting = 2;
     }
 }
@@ -306,9 +306,8 @@ function obst () {
         rect(objX2,objY2,40,40);
         fill(115, 115, 115);
         triangle(objX2,objY2,objX2+40,objY2,objX2+40,objY2+40);
+		objX2 = objX2 + objectSpeed + 0.1;
     }
-    objX2 = objX2 + objectSpeed;
-    
     if (objX2 <= -40) {
         objX2 = random(400,500);
         objY2 = random(70,330);
@@ -319,9 +318,8 @@ function obst () {
         rect(objX3,objY3,40,40);
         fill(115, 115, 115);
         triangle(objX3,objY3,objX3+40,objY3,objX3+40,objY3+40);
+		objX3 = objX3 + objectSpeed + 0.2;
     }
-    objX3 = objX3 + objectSpeed;
-    
     if (objX3 <= -40) {
         objX3 = random(400,500);
         objY3 = random(70,330);
@@ -332,8 +330,9 @@ function obst () {
         rect(objX4,objY4,40,40);
         fill(115, 115, 115);
         triangle(objX4,objY4,objX4+40,objY4,objX4+40,objY4+40);
+		objX4 = objX4 + objectSpeed + 0.3;
     }
-    objX4 = objX4 + objectSpeed;
+    
     
     if (objX4 <= -40) {
         objX4 = random(400,500);
