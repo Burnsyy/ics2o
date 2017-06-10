@@ -1,6 +1,6 @@
 /* Summative Game
 Cory 
-Last Updated 2017-05-12
+Last Updated 2017-06-09
 */
 
 var x = 50;
@@ -43,18 +43,18 @@ function menu () {
     textFont("Impact");
     textSize (52);
     fill(103, 0, 181);
-    text('GRAVITY SWITCHER',0,67);
+    //text('GRAVITY SWITCHER',0,67);
     textFont("Palatino");
     textSize (22);
     fill(0, 9, 255);
-    text('BY: CORY B',268,98);
+    //text('BY: CORY B',268,98);
     
     fill(4, 0, 255);
     rect(200,200,240,50);
     textFont("Helvetica");
     textSize (37);
     fill(255, 255, 255);
-    text('START GAME',82,215);
+    //text('START GAME',82,215);
     
     fill(255, 0, 0);
     rect(100,325,140,50);
@@ -62,8 +62,8 @@ function menu () {
     fill(255, 255, 255);
     textFont("Helvetica");
     textSize (27);
-    text('HOW', 68, 337);
-    text('SETTINGS',232, 337);
+    //text('HOW', 68, 337);
+    //text('SETTINGS',232, 337);
     
     if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) {
         screen = 2;
@@ -409,5 +409,4 @@ function draw() {
     display ();
     obst ();
     menu ();
-}
 }
