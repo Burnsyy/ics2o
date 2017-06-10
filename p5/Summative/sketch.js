@@ -30,6 +30,7 @@ var c3A = 0;
 var c1B = 0;
 var c2B = 0;
 var c3B = 0;
+var sound = 'ON';
 
 function setup() {
 	var myCanvas = createCanvas(400, 400);
