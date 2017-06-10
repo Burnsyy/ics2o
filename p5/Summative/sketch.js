@@ -65,7 +65,7 @@ function menu () {
     text('HOW', 68, 337);
     text('SETTINGS',232, 337);
     
-     if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) {
+    if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) {
         screen = 2;
     }
     if (mouseIsPressed && mouseX >= 30 && mouseX <= 170 && mouseY >= 300 && mouseY <= 350) {
@@ -409,4 +409,5 @@ function draw() {
     display ();
     obst ();
     menu ();
+}
 }
