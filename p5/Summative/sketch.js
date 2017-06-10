@@ -6,7 +6,7 @@ Last Updated 2017-06-09
 var x = 50;
 var y = 200;
 var setting = 2;
-var screen = 2;
+var screen = 3;
 var score = 0;
 var speedX = 0;
 var speedY = 0;
@@ -76,6 +76,30 @@ function menu () {
     } 
 }
 } //Menu
+
+if (screen === '3') {
+    
+function how () {
+    textFont(createFont("Impact"), 69);
+    fill(0, 9, 255);
+    text('HOW TO PLAY',30,72);
+    
+    textFont(createFont("Comic Sans"), 22);
+    fill(214, 0, 252);
+    text('» Press W to move up and down',32,106);
+    text('» Avoid hitting the obstacles',32,146);
+    text('» Everytime you hit a square you will',32,186);
+    text('lose one life',10,210);
+    text('» The score will go up for as long as you are alive',32,246);
+    text('you are alive',10,246+24);
+    text('» Stay alive for as long as you can!',32,306);
+    
+    textFont(createFont("Impact"), 45);
+    fill(0, 9, 255);
+    text('HAVE FUN',116,392);
+};
+
+} //how
 
 	if (screen === 2) { //game
 function player () {
@@ -398,5 +422,6 @@ function draw() {
     bckground (); 
     display ();
     obst ();
-   // menu ();
+    // menu ();
+    how ();
 }
