@@ -5,7 +5,7 @@ Last Updated 2017-05-12
 
 var x = 50;
 var y = 200;
-var setting = 3;
+var setting = 2;
 var screen = 'MENU';
 var score = 0;
 var speedX = 0;
