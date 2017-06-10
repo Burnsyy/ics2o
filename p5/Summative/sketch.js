@@ -40,16 +40,19 @@ function setup() {
 if (screen === 1) { //main menu
     
 function menu () {
-    textFont(createFont("Impact"), 52);
+    textFont("Impact");
+    textSize (52);
     fill(103, 0, 181);
     text('GRAVITY SWITCHER',0,67);
-    textFont(createFont("Palatino"), 22);
+    textFont("Palatino");
+    textSize (22);
     fill(0, 9, 255);
     text('BY: CORY B',268,98);
     
     fill(4, 0, 255);
     rect(200,200,240,50);
-    textFont(createFont("Helvetica"), 37);
+    textFont("Helvetica");
+    textSize (37);
     fill(255, 255, 255);
     text('START GAME',82,215);
     
@@ -57,7 +60,8 @@ function menu () {
     rect(100,325,140,50);
     rect(300,325,140,50);
     fill(255, 255, 255);
-    textFont(createFont("Helvetica"), 27);
+    textFont("Helvetica");
+    textSize (27);
     text('HOW', 68, 337);
     text('SETTINGS',232, 337);
     
