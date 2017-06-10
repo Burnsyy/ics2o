@@ -6,7 +6,7 @@ Last Updated 2017-05-12
 var x = 50;
 var y = 200;
 var setting = 3;
-var screen = 1;
+var screen = 2;
 var score = 0;
 var speedX = 0;
 var speedY = 0;
@@ -36,6 +36,8 @@ function setup() {
 	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
 	rectMode(CENTER);
 }
+
+	if (screen === 2) {
 function player () {
     fill (107, 56, 194);
     ellipse(x,y,40,40);  
@@ -359,6 +361,7 @@ function obst () {
 	lives = lives - 1; 
     }
 }
+	} //end of game (setting 2)
 function draw() {
     background(4, 206, 217);
     player ();
