@@ -6,7 +6,7 @@ Last Updated 2017-05-12
 var x = 50;
 var y = 200;
 var setting = 2;
-var screen = 1;
+var screen = 2;
 var score = 0;
 var speedX = 0;
 var speedY = 0;
