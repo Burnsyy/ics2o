@@ -6,7 +6,7 @@ Last Updated 2017-05-12
 var x = 50;
 var y = 200;
 var setting = 3;
-var screen = 2;
+var screen = 'MENU';
 var score = 0;
 var speedX = 0;
 var speedY = 0;
@@ -37,7 +37,43 @@ function setup() {
 	rectMode(CENTER);
 }
 
-	if (screen === 2) {
+if (screen === 'MENU') { //main menu
+    
+function menu () {
+    textFont(createFont("Impact"), 52);
+    fill(103, 0, 181);
+    text('GRAVITY SWITCHER',0,58);
+    textFont(createFont("Palatino"), 22);
+    fill(0, 9, 255);
+    text('BY: CORY B',268,83);
+    
+    fill(4, 0, 255);
+    rect(200,200,240,50);
+    textFont(createFont("Helvetica"), 37);
+    fill(255, 255, 255);
+    text('START GAME',82,215);
+    
+    fill(255, 0, 0);
+    rect(100,325,140,50);
+    rect(300,325,140,50);
+    fill(255, 255, 255);
+    textFont(createFont("Helvetica"), 27);
+    text('HOW', 68, 337);
+    text('SETTINGS',232, 337);
+    
+    if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) {
+        screen = 'GAME';
+    }
+    if (mouseIsPressed && mouseX >= 30 && mouseX <= 170 && mouseY >= 300 && mouseY <= 350) {
+        screen = 'HOW';
+    }
+    if (mouseIsPressed && mouseX >= 230 && mouseX <= 370 && mouseY >= 300 && mouseY <= 350) {
+        screen = 'SETTINGS';
+    }
+};
+} //Menu
+
+	if (screen === 'GAME') { //game
 function player () {
     fill (107, 56, 194);
     ellipse(x,y,40,40);  
@@ -368,4 +404,5 @@ function draw() {
     bckground (); 
     display ();
     obst ();
+    menu ();
 }
