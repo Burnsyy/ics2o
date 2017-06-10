@@ -40,18 +40,18 @@ function setup() {
 if (screen === 1) { //main menu
     
 function menu () {
-    //textFont("Impact");
+    textFont("Impact");
     textSize (52);
     fill(103, 0, 181);
     text('GRAVITY SWITCHER',0,67);
-    //textFont("Palatino");
+    textFont("Palatino");
     textSize (22);
     fill(0, 9, 255);
     text('BY: CORY B',268,98);
     
     fill(4, 0, 255);
     rect(200,200,240,50);
-    //textFont("Helvetica");
+    textFont("Helvetica");
     textSize (37);
     fill(255, 255, 255);
     text('START GAME',82,215);
@@ -60,12 +60,12 @@ function menu () {
     rect(100,325,140,50);
     rect(300,325,140,50);
     fill(255, 255, 255);
-    //textFont("Helvetica");
+    textFont("Helvetica");
     textSize (27);
     text('HOW', 68, 337);
     text('SETTINGS',232, 337);
     
-    if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) {
+    /* if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) {
         screen = 2;
     }
     if (mouseIsPressed && mouseX >= 30 && mouseX <= 170 && mouseY >= 300 && mouseY <= 350) {
@@ -73,7 +73,7 @@ function menu () {
     }
     if (mouseIsPressed && mouseX >= 230 && mouseX <= 370 && mouseY >= 300 && mouseY <= 350) {
         screen = 4;
-    }
+    } */
 };
 } //Menu
 
