@@ -6,7 +6,7 @@ Last Updated 2017-06-09
 var x = 50;
 var y = 200;
 var setting = 2;
-var screen = 3;
+var screen = 'GAME';
 var score = 0;
 var speedX = 0;
 var speedY = 0;
@@ -37,7 +37,7 @@ function setup() {
 	rectMode(CENTER);
 }
 
-if (screen === 1) { //main menu
+if (screen === 'MENU') { //main menu
     
 function menu () {
     textFont("Impact");
@@ -66,18 +66,18 @@ function menu () {
     text("SETTINGS",232, 337);
     
     if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) {
-        screen = 2;
+        screen = 'GAME';
     }
     if (mouseIsPressed && mouseX >= 30 && mouseX <= 170 && mouseY >= 300 && mouseY <= 350) {
-        screen = 3;
+        screen = 'HOW';
     }
     if (mouseIsPressed && mouseX >= 230 && mouseX <= 370 && mouseY >= 300 && mouseY <= 350) {
-        screen = 4;
+        screen = 'SETTINGS';
     } 
 }
 } //Menu
 
-if (screen === '3') {
+if (screen === 'HOW') {
     
 function how () {
     textFont(createFont("Impact"), 69);
@@ -101,7 +101,7 @@ function how () {
 
 } //how
 
-	if (screen === 2) { //game
+	if (screen === 'GAME') { //game
 function player () {
     fill (107, 56, 194);
     ellipse(x,y,40,40);  
@@ -423,5 +423,5 @@ function draw() {
     display ();
     obst ();
     // menu ();
-    how ();
+    //how ();
 }
