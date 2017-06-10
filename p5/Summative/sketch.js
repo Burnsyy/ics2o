@@ -42,10 +42,10 @@ if (screen === 'MENU') { //main menu
 function menu () {
     textFont(createFont("Impact"), 52);
     fill(103, 0, 181);
-    text('GRAVITY SWITCHER',0,58);
+    text('GRAVITY SWITCHER',0,67);
     textFont(createFont("Palatino"), 22);
     fill(0, 9, 255);
-    text('BY: CORY B',268,83);
+    text('BY: CORY B',268,98);
     
     fill(4, 0, 255);
     rect(200,200,240,50);
