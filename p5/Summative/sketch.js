@@ -36,7 +36,6 @@ function setup() {
 	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
 	rectMode(CENTER);
 }
-	if (setting === 2) {
 function player () {
     fill (107, 56, 194);
     ellipse(x,y,40,40);  
@@ -360,7 +359,6 @@ function obst () {
 	lives = lives - 1; 
     }
 }
-	} //end of if setting = 2
 function draw() {
     background(4, 206, 217);
     player ();
