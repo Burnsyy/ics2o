@@ -408,5 +408,5 @@ function draw() {
     bckground (); 
     display ();
     obst ();
-    menu ();
+   // menu ();
 }
