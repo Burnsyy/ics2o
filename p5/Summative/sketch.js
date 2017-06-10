@@ -340,22 +340,22 @@ function obst () {
         objY4 = random(70,330);
     }
     
-    if ((abs(x-objX1)<20) && (abs(y-objY1)<20)) {
+    if ((abs(x-objX1)<10) && (abs(y-objY1)<40)) {
 	objX1 = 500;
 	objY1 = random(70,330);
         lives = lives - 1;    
     }
-	if ((abs(x-objX2)<20) && (abs(y-objY2)<20)) {
+	if ((abs(x-objX2)<10) && (abs(y-objY2)<40)) {
 	objX2 = 500;
 	objY2 = random(70,330);
 	lives = lives - 1;
     }
-	if ((abs(x-objX3)<20) && (abs(y-objY3)<20)) {
+	if ((abs(x-objX3)<10) && (abs(y-objY3)<40)) {
 	objX3 = 500;
 	objY3 = random(70,330); 
 	lives = lives - 1;
     }
-	if ((abs(x-objX4)<20) && (abs(y-objY4)<20)) {
+	if ((abs(x-objX4)<10) && (abs(y-objY4)<40)) {
 	objX4 = 500;
 	objY4 = random(70,330);   
 	lives = lives - 1; 
