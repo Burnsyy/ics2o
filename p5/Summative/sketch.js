@@ -74,7 +74,7 @@ function menu () {
     if (mouseIsPressed && mouseX >= 230 && mouseX <= 370 && mouseY >= 300 && mouseY <= 350) {
         screen = 4;
     } 
-};
+}
 } //Menu
 
 	if (screen === 2) { //game
