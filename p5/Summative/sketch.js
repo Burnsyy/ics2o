@@ -123,10 +123,8 @@ function display () {
 	text (round(score), 38,13);	
 	
 	if (lives === 5) {
-	    if (setting ===1) {
-	        fill(74, 19, 19);
-	        rect(340,0,60,15);
-	    }
+	    fill(74, 19, 19);
+	    rect(340,0,60,15);
 	    fill(0, 255, 4);
 	    ellipse (346,7,10,10);
 	    ellipse (358,7,10,10);
@@ -135,10 +133,8 @@ function display () {
 	    ellipse (394,7,10,10);
 	}
 	if (lives === 4) {
-	    if (setting ===1) {
-	        fill(74, 19, 19);
-	        rect(340,0,60,15);
-	    }
+	    fill(74, 19, 19);
+	    rect(340,0,60,15);
 	    fill (179, 255, 0);
 	    ellipse (358,7,10,10);
 	    ellipse (370,7,10,10);
@@ -146,29 +142,23 @@ function display () {
 	    ellipse (394,7,10,10);
 	}
 	if (lives === 3) {
-	    if (setting ===1) {
-	        fill(74, 19, 19);
-	        rect(340,0,60,15);
-	    }
+	    fill(74, 19, 19);
+	    rect(340,0,60,15);
 	    fill (199, 209, 7);
 	    ellipse (370,7,10,10);
 	    ellipse (382,7,10,10);
 	    ellipse (394,7,10,10);
 	}
 	if (lives === 2) {
-	    if (setting ===1) {
-	        fill(74, 19, 19);
-	        rect(340,0,60,15);
-	    }
+	    fill(74, 19, 19);
+	    rect(340,0,60,15);
 	    fill (207, 137, 8);
 	    ellipse (382,7,10,10);
 	    ellipse (394,7,10,10);
 	}
 	if (lives === 1) {
-	    if (setting ===1) {
-	        fill(74, 19, 19);
-	        rect(340,0,60,15);
-	    }
+	    fill(74, 19, 19);
+	    rect(340,0,60,15);
 	    fill (207, 8, 8);
 	    ellipse (394,7,10,10);
 	}
