@@ -35,6 +35,9 @@ var c1B = 0;
 var c2B = 0;
 var c3B = 0;
 var sound = 'ON';
+var pc1 = 66;
+var pc2 = 6;
+var pc3 = 115;
 
 function setup() {
 	var myCanvas = createCanvas(400, 400);
@@ -44,12 +47,13 @@ function setup() {
 
 function draw() {
     background(4, 206, 217);
-	player ();
+    player ();
     bckground (); 
     display ();
     obst ();
-	menu ();
-	how ();
+    menu ();
+    how ();
+    options ();
 }
   
 function menu () {
@@ -126,6 +130,173 @@ function how () {
 	} 
 }
 
+function options () { 
+	if (screen === "SETTINGS") {
+		textFont("Impact");
+		textSize(69);
+		fill(0, 9, 255);
+		text("SETTINGS",71,72);
+		
+		if (mouseIsPressed && mouseX >= 12.5 && mouseX <= 87.5 && mouseY >=125 mouseY <= 175) { //grass
+			setting = 1;
+		}
+		if (mouseIsPressed && mouseX >= 62.5 && mouseX <= 137.5 && mouseY >=125 mouseY <= 175) { //Lava
+			setting = 2;
+		}
+		if (mouseIsPressed && mouseX >= 112.5 && mouseX <= 187.5 && mouseY >=125 mouseY <= 175) { //Ice
+			setting = 3;
+		}
+		if (mouseIsPressed && mouseX >= 162.5 && mouseX <= 137.5 && mouseY >=125 mouseY <= 175) { //Desert
+			setting = 4;
+		}
+		
+		if (setting === 1) { //grass
+			fill(28, 28, 28);
+			rect(50,150,95,70); //outline
+			fill(4, 206, 217);
+			rect(50,150,85,60); //inline
+		}
+		
+		if (setting === 2) { //lava
+			fill(28, 28, 28);
+			rect(150,150,95,70); //outline
+			fill(4, 206, 217);
+			rect(150,150,85,60); //inline
+		}
+		
+		if (setting === 3) { //ice
+			fill(28, 28, 28);
+			rect(250,150,95,70); //outline
+			fill(4, 206, 217);
+			rect(250,150,85,60); //inline
+		}
+		
+		if (setting === 4) { //desert
+			fill(28, 28, 28);
+			rect(350,150,95,70); //outline
+			fill(4, 206, 217);
+			rect(350,150,85,60); //inline
+		}
+		
+		if (pc1 === 66 && pc2 === 6 && pc3 === 115) { //purple
+			fill(28, 28, 28);
+			rect(25,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(25,300,50,50); //inline
+		}
+		
+		if (pc1 === 204 && pc2 === 0 && pc3 === 0) { //red
+			fill(28, 28, 28);
+			rect(75,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(75,300,50,50); //inline
+		}
+		
+		if (pc1 === 222 && pc2 === 215 && pc3 === 4) { //yellow
+			fill(28, 28, 28);
+			rect(125,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(125,300,50,50); //inline
+		}
+		
+		if (pc1 === 3 && pc2 === 89 && pc3 === 1) { //green
+			fill(28, 28, 28);
+			rect(175,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(175,300,50,50); //inline
+		}
+		
+		if (pc1 === 0 && pc2 === 30 && pc3 === 255) { //blue
+			fill(28, 28, 28);
+			rect(225,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(225,300,50,50); //inline
+		}
+		
+		if (pc1 === 245 && pc2 === 90 && pc3 === 0) { //orange
+			fill(28, 28, 28);
+			rect(275,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(275,300,50,50); //inline
+		}
+		
+		if (pc1 === 227 && pc2 === 12 && pc3 === 227) { //pink
+			fill(28, 28, 28);
+			rect(325,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(325,300,50,50); //inline
+		}
+		
+		if (pc1 === 0 && pc2 === 0 && pc3 === 0) { //black
+			fill(28, 28, 28);
+			rect(375,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(375,300,50,50); //inline
+		}
+		
+		if (sound === 'ON') {
+		fill(28, 28, 28);
+			rect(202,371,76,50); //outline
+			fill(4, 206, 217);
+			rect(202,371,66,40); //inline
+		}
+		
+		if (sound === 'OFF') {
+			fill(28, 28, 28);
+			rect(290,371,96,50); //outline
+			fill(4, 206, 217);
+			rect(290,371,86,40); //inline
+		}
+		
+		textFont("Tahoma");
+		textSize(41);
+		fill(255, 0, 0);
+		text("Level:",152,109);
+		text("Character:",106,243);
+		text("Sound:",36,382);
+		
+		noStroke();
+		fill(37, 61, 4);
+		rect(50,150,75,50);
+		fill(204, 0, 0);
+		rect(150,150,75,50);
+		fill(0, 188, 209);
+		rect(250,150,75,50);
+		fill(209, 209, 0);
+		rect(350,150,75,50);
+		
+		fill(255, 255, 255);
+		textFont("Calibri");
+		textSize(23);
+		text("GRASS",19,159);
+		text("LAVA",126,159);
+		text("ICE",237,159);
+		text("DESERT",316,159);
+		
+		noStroke();
+		fill(66, 6, 115); 
+		ellipse(25,300,40,40);
+		fill(204, 0, 0); 
+		ellipse(75,300,40,40);
+		fill(222, 215, 4);
+		ellipse(125,300,40,40);
+		fill(3, 89, 1);
+		ellipse(175,300,40,40);
+		fill(0, 30, 255);
+		ellipse(225,300,40,40);
+		fill(245, 90, 0);
+		ellipse(275,300,40,40);
+		fill(227, 12, 227);
+		ellipse(325,300,40,40);
+		fill(0, 0, 0);
+		ellipse(375,300,40,40);
+		
+		textFont("Trebuchet");
+		textSize(40);
+		text("ON",172,385);
+		text("OFF",250,385);
+	}
+}
 
 function player () {
 	if (screen === 'GAME') {
