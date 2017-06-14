@@ -35,9 +35,9 @@ var c1B = 0;
 var c2B = 0;
 var c3B = 0;
 var sound = 'ON';
-var pc1 = 66;
-var pc2 = 6;
-var pc3 = 115;
+var pc1 = 204;
+var pc2 = 0;
+var pc3 = 0;
 
 function setup() {
 	var myCanvas = createCanvas(400, 400);
@@ -53,7 +53,7 @@ function draw() {
     obst ();
     menu ();
     how ();
-    options ();
+    settings ();
 }
   
 function menu () {
@@ -130,7 +130,7 @@ function how () {
 	} 
 }
 
-function options () { 
+function settings () { 
 	if (screen === "SETTINGS") {
 		textFont("Impact");
 		textSize(69);
