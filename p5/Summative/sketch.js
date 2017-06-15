@@ -35,11 +35,15 @@ var c1B = 0;
 var c2B = 0;
 var c3B = 0;
 var sound = 'ON';
+var pc1 = 204;
+var pc2 = 0;
+var pc3 = 0;
 
 function setup() {
 	var myCanvas = createCanvas(400, 400);
 	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
 	rectMode(CENTER);
+
 }
 
 function draw() {
@@ -50,6 +54,7 @@ function draw() {
     obst ();
     menu ();
     how ();
+	options ();
 }
   
 function menu () {
@@ -76,7 +81,7 @@ function menu () {
 		fill(255, 255, 255);
 		textFont("Helvetica");
 		textSize (27);
-		text("HOW", 68, 337);
+		text('HOW', 68, 337);
 		text("SETTINGS",232, 337);
 		
 		if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) {
@@ -92,6 +97,7 @@ function menu () {
 } 
 
 function how () {
+	
 	if (screen === 'HOW') {
 		textFont("Impact");
 		textSize (69);
@@ -124,6 +130,171 @@ function how () {
 			screen = 'MENU';
 		}
 	} 
+}
+
+function options () {
+	if (screen === 'SETTINGS') {
+		textFont("Impact");
+		textSize(69);
+		fill(0, 9, 255);
+		text('SETTINGS',71,72);
+		
+		fill(214, 0, 252);
+			rect(33,19,66,38);
+			fill(255, 255, 255);
+			textSize(30);
+			text("BACK", 0,32);
+			
+		if (mouseIsPressed && mouseX>=0 && mouseX<= 66 && mouseY >= 0 && mouseY <=38) {
+			screen = 'MENU';
+		}
+		
+		if (setting === 1) { //grass
+			fill(28, 28, 28);
+			rect(50,150,95,70); //outline
+			fill(4, 206, 217);
+			rect(50,150,85,60); //inline
+		}
+		
+		if (setting === 2) { //lava
+			fill(28, 28, 28);
+			rect(150,150,95,70); //outline
+			fill(4, 206, 217);
+			rect(150,150,85,60); //inline
+		}
+		
+		if (setting === 3) { //ice
+			fill(28, 28, 28);
+			rect(250,150,95,70); //outline
+			fill(4, 206, 217);
+			rect(250,150,85,60); //inline
+		}
+		
+		if (setting === 4) { //desert
+			fill(28, 28, 28);
+			rect(350,150,95,70); //outline
+			fill(4, 206, 217);
+			rect(350,150,85,60); //inline
+		}
+		
+		if (pc1 === 66 && pc2 === 6 && pc3 === 115) { //purple
+			fill(28, 28, 28);
+			rect(25,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(25,300,50,50); //inline
+		}
+		
+		if (pc1 === 204 && pc2 === 0 && pc3 === 0) { //red
+			fill(28, 28, 28);
+			rect(75,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(75,300,50,50); //inline
+		}
+		
+		if (pc1 === 222 && pc2 === 215 && pc3 === 4) { //yellow
+			fill(28, 28, 28);
+			rect(125,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(125,300,50,50); //inline
+		}
+		
+		if (pc1 === 3 && pc2 === 89 && pc3 === 1) { //green
+			fill(28, 28, 28);
+			rect(175,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(175,300,50,50); //inline
+		}
+		
+		if (pc1 === 0 && pc2 === 30 && pc3 === 255) { //blue
+			fill(28, 28, 28);
+			rect(225,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(225,300,50,50); //inline
+		}
+		
+		if (pc1 === 245 && pc2 === 90 && pc3 === 0) { //orange
+			fill(28, 28, 28);
+			rect(275,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(275,300,50,50); //inline
+		}
+		
+		if (pc1 === 227 && pc2 === 12 && pc3 === 227) { //pink
+			fill(28, 28, 28);
+			rect(325,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(325,300,50,50); //inline
+		}
+		
+		if (pc1 === 0 && pc2 === 0 && pc3 === 0) { //black
+			fill(28, 28, 28);
+			rect(375,300,60,60); //outline
+			fill(4, 206, 217);
+			rect(375,300,50,50); //inline
+		}
+		
+		if (sound === 'ON') {
+			fill(28, 28, 28);
+			rect(202,371,76,50); //outline
+			fill(4, 206, 217);
+			rect(202,371,66,40); //inline
+		}
+		
+		if (sound === 'OFF') {
+			fill(28, 28, 28);
+			rect(290,371,96,50); //outline
+			fill(4, 206, 217);
+			rect(290,371,86,40); //inline
+		}
+		
+		textFont("Tahoma");
+		textSize(41);
+		fill(255, 0, 0);
+		text('Level:',152,109);
+		text('Character:',106,243);
+		text('Sound:',36,382);
+		
+		noStroke();
+		fill(37, 61, 4);
+		rect(50,150,75,50);
+		fill(204, 0, 0);
+		rect(150,150,75,50);
+		fill(0, 188, 209);
+		rect(250,150,75,50);
+		fill(209, 209, 0);
+		rect(350,150,75,50);
+		
+		fill(255, 255, 255);
+		textFont("Calibri");
+		textSize(23);
+		text("GRASS",19,159);
+		text("LAVA",126,159);
+		text("ICE",237,159);
+		text("DESERT",316,159);
+		
+		noStroke();
+		fill(66, 6, 115); 
+		ellipse(25,300,40,40);
+		fill(204, 0, 0); 
+		ellipse(75,300,40,40);
+		fill(222, 215, 4);
+		ellipse(125,300,40,40);
+		fill(3, 89, 1);
+		ellipse(175,300,40,40);
+		fill(0, 30, 255);
+		ellipse(225,300,40,40);
+		fill(245, 90, 0);
+		ellipse(275,300,40,40);
+		fill(227, 12, 227);
+		ellipse(325,300,40,40);
+		fill(0, 0, 0);
+		ellipse(375,300,40,40);
+		
+		textFont("Trebuchet");
+		textSize(40);
+		text("ON",172,385);
+		text("OFF",250,385);
+  }
 }
 
 function player () {
@@ -479,4 +650,3 @@ function obst () {
 	}
 }
 	
-
