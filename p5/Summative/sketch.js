@@ -149,6 +149,20 @@ function options () {
 			screen = 'MENU';
 		}
 		
+		if (mouseIsPressed && mouseX>=112.5 && mouseX<=187.5 && mouseY >= 125 && mouseY <=175) {
+			setting = 1;
+		}
+		if (mouseIsPressed && mouseX>=112.5 && mouseX<=187.5 && mouseY >= 125 && mouseY <=175) {
+			setting = 2;
+		}
+		if (mouseIsPressed && mouseX>=112.5 && mouseX<=187.5 && mouseY >= 125 && mouseY <=175) {
+			setting = 3;
+		}
+		if (mouseIsPressed && mouseX>=112.5 && mouseX<=187.5 && mouseY >= 125 && mouseY <=175) {
+			setting = 4;
+		}
+		
+		
 		if (setting === 1) { //grass
 			fill(28, 28, 28);
 			rect(50,150,95,70); //outline
