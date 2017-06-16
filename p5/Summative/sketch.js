@@ -163,39 +163,39 @@ function options () {
 		}
 		
 		if (mouseIsPressed && mouseX>=5 && mouseX<=45 && mouseY >= 280 && mouseY <=320) {
-			pc1 = 0;
-			pc2 = 0;
-			pc3 = 0;
+			pc1 = 66;
+			pc2 = 6;
+			pc3 = 115;
 		}
 		if (mouseIsPressed && mouseX>=55 && mouseX<=95 && mouseY >= 280 && mouseY <=320) {
-			pc1 = 0;
+			pc1 = 204;
 			pc2 = 0;
 			pc3 = 0;
 		}
 		if (mouseIsPressed && mouseX>=105 && mouseX<=145 && mouseY >= 280 && mouseY <=320) {
-			pc1 = 0;
-			pc2 = 0;
-			pc3 = 0;
+			pc1 = 222;
+			pc2 = 215;
+			pc3 = 4;
 		}
 		if (mouseIsPressed && mouseX>=155 && mouseX<=195 && mouseY >= 280 && mouseY <=320) {
-			pc1 = 0;
-			pc2 = 0;
-			pc3 = 0;
+			pc1 = 3;
+			pc2 = 89;
+			pc3 = 1;
 		}
 		if (mouseIsPressed && mouseX>=205 && mouseX<=245 && mouseY >= 280 && mouseY <=320) {
 			pc1 = 0;
-			pc2 = 0;
-			pc3 = 0;
+			pc2 = 30;
+			pc3 = 255;
 		}
 		if (mouseIsPressed && mouseX>=255 && mouseX<=295 && mouseY >= 280 && mouseY <=320) {
-			pc1 = 0;
-			pc2 = 0;
+			pc1 = 245;
+			pc2 = 90;
 			pc3 = 0;
 		}
 		if (mouseIsPressed && mouseX>=305 && mouseX<=345 && mouseY >= 280 && mouseY <=320) {
-			pc1 = 0;
-			pc2 = 0;
-			pc3 = 0;
+			pc1 = 227;
+			pc2 = 12;
+			pc3 = 227;
 		}
 		if (mouseIsPressed && mouseX>=355 && mouseX<=395 && mouseY >= 280 && mouseY <=320) {
 			pc1 = 0;
