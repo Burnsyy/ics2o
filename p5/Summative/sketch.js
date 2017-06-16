@@ -354,7 +354,7 @@ function options () {
 
 function player () {
 	if (screen === 'GAME') {
-		fill (107, 56, 194);
+		fill (pc1, pc2, pc3);
 		ellipse(x,y,40,40);  
 		noStroke ();
 		fill(255, 128, 0);
