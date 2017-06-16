@@ -149,17 +149,58 @@ function options () {
 			screen = 'MENU';
 		}
 		
-		if (mouseIsPressed && mouseX>=112.5 && mouseX<=187.5 && mouseY >= 125 && mouseY <=175) {
+		if (mouseIsPressed && mouseX>=12.5 && mouseX<=87.5 && mouseY >= 125 && mouseY <=175) {
 			setting = 1;
 		}
 		if (mouseIsPressed && mouseX>=112.5 && mouseX<=187.5 && mouseY >= 125 && mouseY <=175) {
 			setting = 2;
 		}
-		if (mouseIsPressed && mouseX>=112.5 && mouseX<=187.5 && mouseY >= 125 && mouseY <=175) {
+		if (mouseIsPressed && mouseX>=212.5 && mouseX<=287.5 && mouseY >= 125 && mouseY <=175) {
 			setting = 3;
 		}
-		if (mouseIsPressed && mouseX>=112.5 && mouseX<=187.5 && mouseY >= 125 && mouseY <=175) {
+		if (mouseIsPressed && mouseX>=312.5 && mouseX<=387.5 && mouseY >= 125 && mouseY <=175) {
 			setting = 4;
+		}
+		
+		if (mouseIsPressed && mouseX>=5 && mouseX<=45 && mouseY >= 280 && mouseY <=320) {
+			pc1 = ;
+			pc2 = ;
+			pc3 = ;
+		}
+		if (mouseIsPressed && mouseX>=55 && mouseX<=95 && mouseY >= 280 && mouseY <=320) {
+			pc1 = ;
+			pc2 = ;
+			pc3 = ;
+		}
+		if (mouseIsPressed && mouseX>=105 && mouseX<=145 && mouseY >= 280 && mouseY <=320) {
+			pc1 = ;
+			pc2 = ;
+			pc3 = ;
+		}
+		if (mouseIsPressed && mouseX>=155 && mouseX<=195 && mouseY >= 280 && mouseY <=320) {
+			pc1 = ;
+			pc2 = ;
+			pc3 = ;
+		}
+		if (mouseIsPressed && mouseX>=205 && mouseX<=245 && mouseY >= 280 && mouseY <=320) {
+			pc1 = ;
+			pc2 = ;
+			pc3 = ;
+		}
+		if (mouseIsPressed && mouseX>=255 && mouseX<=295 && mouseY >= 280 && mouseY <=320) {
+			pc1 = ;
+			pc2 = ;
+			pc3 = ;
+		}
+		if (mouseIsPressed && mouseX>=305 && mouseX<=345 && mouseY >= 280 && mouseY <=320) {
+			pc1 = ;
+			pc2 = ;
+			pc3 = ;
+		}
+		if (mouseIsPressed && mouseX>=355 && mouseX<=395 && mouseY >= 280 && mouseY <=320) {
+			pc1 = ;
+			pc2 = ;
+			pc3 = ;
 		}
 		
 		
