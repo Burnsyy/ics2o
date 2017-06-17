@@ -38,12 +38,13 @@ var sound = 'ON';
 var pc1 = 204;
 var pc2 = 0;
 var pc3 = 0;
+var loseMessage = 1;
 
 function setup() {
 	var myCanvas = createCanvas(400, 400);
 	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
 	rectMode(CENTER);
-
+	loseMessage = floor(random(1, 5));
 }
 
 function draw() {
@@ -383,6 +384,25 @@ function lose () {
 	    if (mouseIsPressed && mouseX >=100 && mouseX <=300 && mouseY >= 315 && mouseY <= 365) {
 		screen = 'MENU';    
 		lives = 5;
+		score = 0;
+		loseMessage = floor(random(1, 5));
+	    }
+	    textFont("Trebuchet");
+	    textSize(20);
+	    if (loseMessage === 1) {
+		text("Try again next time!", 111,200);
+	    }
+	    if (loseMessage === 2) {
+		text("You can do better than that!", 80,200);
+	    }
+	    if (loseMessage === 3) {
+		text("Try out some new settings next time!", 43,200);
+	    }
+	    if (loseMessage === 4) {
+		text("Great job!", 152,200);
+	    }
+	    if (loseMessage === 5) {
+		text("Try harder next time!", 107,200);
 	    }
 	}
 };
