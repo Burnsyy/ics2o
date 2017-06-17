@@ -464,6 +464,9 @@ function display () {
 			fill (207, 8, 8);
 			ellipse (394,7,10,10);
 		}
+		if (lives <= 0) {
+			screen = 'LOSE';
+		}
 	}
 }
 
