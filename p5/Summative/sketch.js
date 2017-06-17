@@ -54,7 +54,8 @@ function draw() {
     obst ();
     menu ();
     how ();
-	options ();
+    options ();
+    lose ();
 }
   
 function menu () {
@@ -351,6 +352,32 @@ function options () {
 		text("OFF",250,385);
   }
 }
+
+function lose () {
+	if (screen === 'LOSE') {
+	    textFont("Impact");
+	    textSize(69);
+	    fill(0, 9, 255);
+	    text('YOU LOSE',76,149);
+
+	    textFont("Helvetica");
+	    textSize(40);
+	    fill(255, 0, 47);
+	    text('Your score was:', 17,250);
+	    text(score,304,253);
+
+	    fill(219, 7, 173);
+	    rect(200,340,200,50);
+	    fill(255, 255, 255);
+	    textFont("Trebuchet");
+	    textSize(30);
+	    text('RETRY',152,351);
+
+	    if (mouseIsPressed && mouseX >=100 && mouseX <=300 && mouseY >= 315 && mouseY <= 365) {
+		screen = 'MENU';    
+	    }
+	}
+};
 
 function player () {
 	if (screen === 'GAME') {
