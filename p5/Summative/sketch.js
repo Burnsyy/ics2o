@@ -1,6 +1,6 @@
 /* Summative Game
 Cory 
-Last Updated 2017-06-16
+Last Updated 2017-06-17
 */
 
 var x = 50;
@@ -59,7 +59,7 @@ function draw() {
 }
   
 function menu () {
-	if (screen === 'MENU') { //main menu
+	if (screen === 'MENU') { //main menu		
 		textFont("Impact");
 		textSize (52);
 		fill(103, 0, 181);
@@ -382,6 +382,7 @@ function lose () {
 
 	    if (mouseIsPressed && mouseX >=100 && mouseX <=300 && mouseY >= 315 && mouseY <= 365) {
 		screen = 'MENU';    
+		lives = 5;
 	    }
 	}
 };
