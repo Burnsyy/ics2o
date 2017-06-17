@@ -47,11 +47,11 @@ function setup() {
 	loseMessage = floor(random(1, 5));
 }
 
-function preload() {
+/*function preload() {
 	buttonSound = loadSound('395541__alayan__button-click.wav'); 
 	lifeSound = loadSound('Realistic Punch Mark.wav'); 
 	loseSound = loadSound('Sad Trombone Sound Effect.mp3'); 
-}
+} */
 
 function draw() {
     background(4, 206, 217);
