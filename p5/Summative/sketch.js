@@ -204,6 +204,13 @@ function options () {
 			pc3 = 0;
 		}
 		
+		if (mouseIsPressed && mouseX>=164 && mouseX<=140 && mouseY >= 346 && mouseY <=396) {
+			sound = 'ON';
+		}	
+		
+		if (mouseIsPressed && mouseX>=242 && mouseX<=338 && mouseY >= 346 && mouseY <=396) {
+			sound = 'OFF';
+		}
 		
 		if (setting === 1) { //grass
 			fill(28, 28, 28);
@@ -364,7 +371,7 @@ function lose () {
 	    textSize(40);
 	    fill(255, 0, 47);
 	    text('Your score was:', 17,250);
-	    text(score,304,253);
+	    text(round(score),304,253);
 
 	    fill(219, 7, 173);
 	    rect(200,340,200,50);
