@@ -1,6 +1,6 @@
 /* Summative Game
 Cory 
-Last Updated 2017-06-12
+Last Updated 2017-06-16
 */
 
 var x = 50;
@@ -204,7 +204,7 @@ function options () {
 			pc3 = 0;
 		}
 		
-		if (mouseIsPressed && mouseX>=164 && mouseX<=140 && mouseY >= 346 && mouseY <=396) {
+		if (mouseIsPressed && mouseX>=164 && mouseX<=240 && mouseY >= 346 && mouseY <=396) {
 			sound = 'ON';
 		}	
 		
