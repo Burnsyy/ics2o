@@ -730,7 +730,7 @@ function obst () { //function for obstacles
 			objX1 = random(400,500); //change object x value to random position between 400 and 500
 			objY1 = random(70,330); //change object y value to random position between 70 and 330
 		}
-		if (score >= 20) {
+		if (score >= 20) { //if score is 20 add another object
 			fill(102, 107, 107);//set fill colour
 			rect(objX2+20,objY2+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
@@ -742,7 +742,7 @@ function obst () { //function for obstacles
 			objY2 = random(70,330); //change object y value to random position between 70 and 330
 		}
 		
-		if (score >= 40) {
+		if (score >= 40) { //if score is 40 add another object
 			fill(102, 107, 107);//set fill colour
 			rect(objX3+20,objY3+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
@@ -754,7 +754,7 @@ function obst () { //function for obstacles
 			objY3 = random(70,330); //change object y value to random position between 70 and 330
 		}
 		
-		if (score >= 60) {
+		if (score >= 60) { //if score is 60 add another object
 			fill(102, 107, 107);//set fill colour
 			rect(objX4+20,objY4+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
@@ -767,7 +767,7 @@ function obst () { //function for obstacles
 			objY4 = random(70,330); //change object y value to random position between 70 and 330
 		}
 		
-		if (score >= 90) {
+		if (score >= 90) { //if score is 90 add another object
 			fill(102, 107, 107);//set fill colour
 			rect(objX5+20,objY5+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
@@ -780,7 +780,7 @@ function obst () { //function for obstacles
 			objY5 = random(70,330); //change object y value to random position between 70 and 330
 		}
 		
-		if (score >= 150) {
+		if (score >= 150) { //if score is 150 add another object
 			fill(102, 107, 107);//set fill colour
 			rect(objX6+20,objY6+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
@@ -794,49 +794,49 @@ function obst () { //function for obstacles
 		}
 		
 		if ((abs(x-objX1)<10) && (abs(y-objY1)<40)) { //if player hits object move object and take away one life
-		objX1 = 500;
-		objY1 = random(70,330);
-			lives = lives - 1;    
+		objX1 = 500; //move object x to 500
+		objY1 = random(70,330); //change object y value to random position between 70 and 330
+			lives = lives - 1;  //take away one life   
 			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
 		}
 		if ((abs(x-objX2)<10) && (abs(y-objY2)<40)) { //if player hits object move object and take away one life
-		objX2 = 500;
-		objY2 = random(70,330);
-		lives = lives - 1;
+		objX2 = 500; //move object x to 500
+		objY2 = random(70,330); //change object y value to random position between 70 and 330
+		lives = lives - 1; //take away one life
 			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
 		}
 		if ((abs(x-objX3)<10) && (abs(y-objY3)<40)) { //if player hits object move object and take away one life
-		objX3 = 500;
-		objY3 = random(70,330); 
-		lives = lives - 1;
+		objX3 = 500; //move object x to 500
+		objY3 = random(70,330);  //change object y value to random position between 70 and 330
+		lives = lives - 1; //take away one life
 			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
 		}
 		if ((abs(x-objX4)<10) && (abs(y-objY4)<40)) { //if player hits object move object and take away one life
-		objX4 = 500;
-		objY4 = random(70,330);   
-		lives = lives - 1; 
+		objX4 = 500; //move object x to 500
+		objY4 = random(70,330); //change object y value to random position between 70 and 330 
+		lives = lives - 1;  //take away one life
 			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
 		}
 		if ((abs(x-objX5)<10) && (abs(y-objY5)<40)) { //if player hits object move object and take away one life
-		objX5 = 500;
-		objY5 = random(70,330);   
-		lives = lives - 1; 
+		objX5 = 500; //move object x to 500
+		objY5 = random(70,330);  //change object y value to random position between 70 and 330
+		lives = lives - 1;  //take away one life
 			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
 		}
 		if ((abs(x-objX6)<10) && (abs(y-objY6)<40)) { //if player hits object move object and take away one life
-		objX6 = 500;
-		objY6 = random(70,330);   
-		lives = lives - 1; 
+		objX6 = 500; //move object x to 500
+		objY6 = random(70,330); //change object y value to random position between 70 and 330   
+		lives = lives - 1;  //take away one life
 			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
