@@ -496,9 +496,6 @@ function display () {
 			ellipse (370,7,10,10);
 			ellipse (382,7,10,10);
 			ellipse (394,7,10,10);
-			if (sound === 'ON') {
-				lifeSound.play ();
-			}
 		}
 		if (lives === 3) {
 			fill(0,0,0,0);
@@ -507,9 +504,6 @@ function display () {
 			ellipse (370,7,10,10);
 			ellipse (382,7,10,10);
 			ellipse (394,7,10,10);
-			if (sound === 'ON') {
-				lifeSound.play ();
-			}
 		}
 		if (lives === 2) {
 			fill(0,0,0,0);
@@ -517,9 +511,6 @@ function display () {
 			fill (207, 137, 8);
 			ellipse (382,7,10,10);
 			ellipse (394,7,10,10);
-			if (sound === 'ON') {
-				lifeSound.play ();
-			}
 		}
 		if (lives === 1) {
 			fill(0,0,0,0);
@@ -532,9 +523,6 @@ function display () {
 		}
 		if (lives <= 0) {
 			screen = 'LOSE';
-			if (sound === 'ON') {
-				loseSound.play ();
-			}
 		}
 	}
 }
@@ -775,31 +763,49 @@ function obst () {
 		objX1 = 500;
 		objY1 = random(70,330);
 			lives = lives - 1;    
+			if (sound === 'ON') {
+				loseSound.play ();
+			}
 		}
 		if ((abs(x-objX2)<10) && (abs(y-objY2)<40)) {
 		objX2 = 500;
 		objY2 = random(70,330);
 		lives = lives - 1;
+			if (sound === 'ON') {
+				loseSound.play ();
+			}
 		}
 		if ((abs(x-objX3)<10) && (abs(y-objY3)<40)) {
 		objX3 = 500;
 		objY3 = random(70,330); 
 		lives = lives - 1;
+			if (sound === 'ON') {
+				loseSound.play ();
+			}
 		}
 		if ((abs(x-objX4)<10) && (abs(y-objY4)<40)) {
 		objX4 = 500;
 		objY4 = random(70,330);   
 		lives = lives - 1; 
+			if (sound === 'ON') {
+				loseSound.play ();
+			}
 		}
 		if ((abs(x-objX5)<10) && (abs(y-objY5)<40)) {
 		objX5 = 500;
 		objY5 = random(70,330);   
 		lives = lives - 1; 
+			if (sound === 'ON') {
+				loseSound.play ();
+			}
 		}
 		if ((abs(x-objX6)<10) && (abs(y-objY6)<40)) {
 		objX6 = 500;
 		objY6 = random(70,330);   
 		lives = lives - 1; 
+			if (sound === 'ON') {
+				loseSound.play ();
+			}
 		}
 	}
 }
