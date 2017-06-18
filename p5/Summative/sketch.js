@@ -40,19 +40,17 @@ var pc2 = 0;
 var pc3 = 0;
 var loseMessage = 1;
 
-function preload() {
-	buttonSound = loadSound('395541__alayan__button-click.wav'); 
-	lifeSound = loadSound('Realistic Punch Mark.wav'); 
-	loseSound = loadSound('Sad Trombone Sound Effect.mp3'); 
+function preload() { //function to preload sounds
+	buttonSound = loadSound('395541__alayan__button-click.wav'); //load button sound
+	lifeSound = loadSound('Realistic Punch Mark.wav'); //load lose life sound
+	loseSound = loadSound('Sad Trombone Sound Effect.mp3'); //load lose sound
 } 
 
 function setup() {
 	var myCanvas = createCanvas(400, 400);
 	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
-	rectMode(CENTER);
-	loseMessage = floor(random(1, 5));
-	lifeSound.setVolume(0.1);
-	loseSound.setVolume(0.1);
+	rectMode(CENTER); //change rectangle mode to center
+	loseMessage = floor(random(1, 5)); //choose random number for lose message
 }
 
 function draw() {
