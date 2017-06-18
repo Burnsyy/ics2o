@@ -40,6 +40,12 @@ var pc2 = 0;
 var pc3 = 0;
 var loseMessage = 1;
 
+function preload() {
+	//buttonSound = loadSound('395541__alayan__button-click.wav'); 
+	lifeSound = loadSound('Realistic Punch Mark.wav'); 
+	loseSound = loadSound('Sad Trombone Sound Effect.mp3'); 
+} 
+
 function setup() {
 	var myCanvas = createCanvas(400, 400);
 	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
@@ -48,12 +54,6 @@ function setup() {
 	lifeSound.setVolume(0.1);
 	loseSound.setVolume(0.1);
 }
-
-function preload() {
-	//buttonSound = loadSound('395541__alayan__button-click.wav'); 
-	lifeSound = loadSound('Realistic Punch Mark.wav'); 
-	loseSound = loadSound('Sad Trombone Sound Effect.mp3'); 
-} 
 
 function draw() {
     background(4, 206, 217);
