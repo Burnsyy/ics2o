@@ -41,7 +41,7 @@ var pc3 = 0;
 var loseMessage = 1;
 
 function preload() {
-	//buttonSound = loadSound('395541__alayan__button-click.wav'); 
+	buttonSound = loadSound('395541__alayan__button-click.wav'); 
 	lifeSound = loadSound('Realistic Punch Mark.wav'); 
 	loseSound = loadSound('Sad Trombone Sound Effect.mp3'); 
 } 
@@ -97,19 +97,19 @@ function menu () {
 		if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) {
 			screen = 'GAME';
 			if (sound === 'ON') {
-				//buttonSound.play ();
+				buttonSound.play ();
 			}
 		}
 		if (mouseIsPressed && mouseX >= 30 && mouseX <= 170 && mouseY >= 300 && mouseY <= 350) {
 			screen = 'HOW';
 			if (sound === 'ON') {
-				//buttonSound.play ();
+				buttonSound.play ();
 			}
 		}
 		if (mouseIsPressed && mouseX >= 230 && mouseX <= 370 && mouseY >= 300 && mouseY <= 350) {
 			screen = 'SETTINGS';
 			if (sound === 'ON') {
-				//buttonSound.play ();
+				buttonSound.play ();
 			}
 		} 
 	}
@@ -148,7 +148,7 @@ function how () {
 		if (mouseIsPressed && mouseX >= 6 && mouseX <= 82 && mouseY <= 395  && mouseY >= 345) {
 			screen = 'MENU';
 			if (sound === 'ON') {
-				//buttonSound.play ();
+				buttonSound.play ();
 			}
 		}
 	} 
@@ -170,7 +170,7 @@ function options () {
 		if (mouseIsPressed && mouseX>=0 && mouseX<= 66 && mouseY >= 0 && mouseY <=38) {
 			screen = 'MENU';
 			if (sound === 'ON') {
-				//buttonSound.play ();
+				buttonSound.play ();
 			}
 		}
 		
@@ -410,7 +410,7 @@ function lose () {
 		score = 0;
 		loseMessage = floor(random(1, 5));
 		    if (sound === 'ON') {
-				//buttonSound.play ();
+				buttonSound.play ();
 			}
 	    }
 	    textFont("Trebuchet");
