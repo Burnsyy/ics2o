@@ -46,15 +46,15 @@ function preload() { //function to preload sounds
 	loseSound = loadSound('Sad Trombone Sound Effect.mp3'); //load lose sound
 } 
 
-function setup() {
-	var myCanvas = createCanvas(400, 400);
+function setup() { //setup function
+	var myCanvas = createCanvas(400, 400); //create a 400 x 400 canvas 
 	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
 	rectMode(CENTER); //change rectangle mode to center
 	loseMessage = floor(random(1, 5)); //choose random number for lose message
 }
 
-function draw() {
-    background(4, 206, 217);
+function draw() { //draw loop
+    background(4, 206, 217); //set background to light blue
     player ();
     bckground (); 
     display ();
@@ -65,32 +65,32 @@ function draw() {
     lose ();
 }
   
-function menu () {
-	if (screen === 'MENU') { //main menu		
-		textFont("Impact");
-		textSize (52);
-		fill(103, 0, 181);
-		text("GRAVITY SWITCHER",0,67);
-		textFont("Palatino");
-		textSize (22);
-		fill(0, 9, 255);
-		text("BY: CORY B",268,98);
+function menu () { //function for menu screen
+	if (screen === 'MENU') { //run code only if screen is set to 'menu'		
+		textFont("Impact"); //set font to impact
+		textSize (52); //set text size to 52
+		fill(103, 0, 181); //set fill colour
+		text("GRAVITY SWITCHER",0,67); //create text 'GRAVITY SWITCHER'
+		textFont("Palatino"); //set font to Palatino
+		textSize (22); //set text size to 22
+		fill(0, 9, 255); //set fill colour
+		text("BY: CORY B",268,98); //create text 'BY: CORY B'
 		
-		fill(4, 0, 255);
-		rect(200,200,240,50);
-		textFont("Helvetica");
-		textSize (37);
-		fill(255, 255, 255);
-		text("START GAME",82,215);
+		fill(4, 0, 255); //set fill colour
+		rect(200,200,240,50); //create rectangle at coordinates
+		textFont("Helvetica"); //set font to Helvetica
+		textSize (37); //set text size to 37
+		fill(255, 255, 255); //set fill colour
+		text("START GAME",82,215); //create text 'START GAME'
 		
-		fill(255, 0, 0);
-		rect(100,325,140,50);
-		rect(300,325,140,50);
-		fill(255, 255, 255);
-		textFont("Helvetica");
-		textSize (27);
-		text('HOW', 68, 337);
-		text("SETTINGS",232, 337);
+		fill(255, 0, 0); //set fill colour
+		rect(100,325,140,50); //create rectangle at coordinates
+		rect(300,325,140,50); //create rectangle at coordinates
+		fill(255, 255, 255); //set fill colour
+		textFont("Helvetica"); //set font to Helvetica
+		textSize (27); //set text size to 27
+		text('HOW', 68, 337); //create text 'HOW'
+		text("SETTINGS",232, 337); //create text 'SETTINGS'
 		
 		if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) {
 			screen = 'GAME';
@@ -116,32 +116,32 @@ function menu () {
 function how () {
 	
 	if (screen === 'HOW') {
-		textFont("Impact");
-		textSize (69);
-		fill(0, 9, 255);
-		text('HOW TO PLAY',30,72);
+		textFont("Impact"); //set font to Impact
+		textSize (69); //set text size to 69
+		fill(0, 9, 255); //set fill colour
+		text('HOW TO PLAY',30,72); //create text 'HOW TO PLAY'
 		
-		textFont("Comic Sans");
-		textSize(22);
-		fill(214, 0, 252);
-		text('» Press W to move up and down',32,106);
-		text('» Avoid hitting the obstacles',32,146);
-		text('» Everytime you hit a square you will',32,186);
-		text('lose one life',10,210);
-		text('» The score will go up for as long as',32,246);
-		text('you are alive',10,246+24);
-		text('» Stay alive for as long as you can!',32,306);
+		textFont("Comic Sans"); //set font to Comic Sans
+		textSize(22); //set text size to 22
+		fill(214, 0, 252); //set fill colour
+		text('» Press W to move up and down',32,106); //create text '» Press W to move up and down'
+		text('» Avoid hitting the obstacles',32,146); //create text '» Avoid hitting the obstacles'
+		text('» Everytime you hit a square you will',32,186); //create text '» Everytime you hit a square you will'
+		text('lose one life',10,210); //create text 'lose one life'
+		text('» The score will go up for as long as',32,246); //create text '» The score will go up for as long as'
+		text('you are alive',10,246+24); //create text 'you are alive'
+		text('» Stay alive for as long as you can!',32,306); //create text '» Stay alive for as long as you can!'
 		
-		textFont("Impact");
-		textSize (45);
-		fill(0, 9, 255);
-		text('HAVE FUN',116,392);
+		textFont("Impact"); //set font to Impact
+		textSize (45); //set text size to 45
+		fill(0, 9, 255); //set fill colour
+		text('HAVE FUN',116,392); //create text 'HAVE FUN'
 		
-		fill(214, 0, 252);
-		rect(44,370,76,50);
-		fill(255, 255, 255);
-		textSize(32);
-		text("BACK", 9,385);
+		fill(214, 0, 252); //set fill colour
+		rect(44,370,76,50); //create rectangle at coordinates
+		fill(255, 255, 255); //set fill colour
+		textSize(32); //set text size to 32
+		text("BACK", 9,385); //create text 'BACK'
     
 		if (mouseIsPressed && mouseX >= 6 && mouseX <= 82 && mouseY <= 395  && mouseY >= 345) {
 			screen = 'MENU';
@@ -154,16 +154,16 @@ function how () {
 
 function options () {
 	if (screen === 'SETTINGS') {
-		textFont("Impact");
-		textSize(69);
-		fill(0, 9, 255);
-		text('SETTINGS',71,72);
+		textFont("Impact"); //set font to Impact
+		textSize(69); //set text size to 69
+		fill(0, 9, 255); //set fill colour
+		text('SETTINGS',71,72); //create text 'SETTINGS'
 		
-		fill(214, 0, 252);
-			rect(33,19,66,38);
-			fill(255, 255, 255);
-			textSize(30);
-			text("BACK", 0,32);
+		fill(214, 0, 252); //set fill colour
+		rect(33,19,66,38); //create rectangle at coordinates
+		fill(255, 255, 255); //set fill colour
+		textSize(30); //set text size to 30
+		text("BACK", 0,32); //create text 'BACK'
 			
 		if (mouseIsPressed && mouseX>=0 && mouseX<= 66 && mouseY >= 0 && mouseY <=38) {
 			screen = 'MENU';
@@ -277,172 +277,172 @@ function options () {
 		}
 		
 		if (setting === 1) { //grass
-			fill(28, 28, 28);
-			rect(50,150,95,70); //outline
-			fill(4, 206, 217);
-			rect(50,150,85,60); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(50,150,95,70);  //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(50,150,85,60);  //create rectangle at coordinates (inline)
 		}
 		
 		if (setting === 2) { //lava
-			fill(28, 28, 28);
+			fill(28, 28, 28);  //create rectangle at coordinates (outline)
 			rect(150,150,95,70); //outline
-			fill(4, 206, 217);
+			fill(4, 206, 217);  //create rectangle at coordinates (inline)
 			rect(150,150,85,60); //inline
 		}
 		
 		if (setting === 3) { //ice
-			fill(28, 28, 28);
-			rect(250,150,95,70); //outline
-			fill(4, 206, 217);
-			rect(250,150,85,60); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(250,150,95,70);   //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(250,150,85,60); //create rectangle at coordinates (inline)
 		}
 		
 		if (setting === 4) { //desert
-			fill(28, 28, 28);
-			rect(350,150,95,70); //outline
-			fill(4, 206, 217);
-			rect(350,150,85,60); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(350,150,95,70);   //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(350,150,85,60); //create rectangle at coordinates (inline)
 		}
 		
 		if (pc1 === 66 && pc2 === 6 && pc3 === 115) { //purple
-			fill(28, 28, 28);
-			rect(25,300,60,60); //outline
-			fill(4, 206, 217);
-			rect(25,300,50,50); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(25,300,60,60); //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(25,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
 		if (pc1 === 204 && pc2 === 0 && pc3 === 0) { //red
-			fill(28, 28, 28);
-			rect(75,300,60,60); //outline
-			fill(4, 206, 217);
-			rect(75,300,50,50); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(75,300,60,60); //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(75,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
 		if (pc1 === 222 && pc2 === 215 && pc3 === 4) { //yellow
-			fill(28, 28, 28);
-			rect(125,300,60,60); //outline
-			fill(4, 206, 217);
-			rect(125,300,50,50); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(125,300,60,60); //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(125,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
 		if (pc1 === 3 && pc2 === 89 && pc3 === 1) { //green
-			fill(28, 28, 28);
-			rect(175,300,60,60); //outline
-			fill(4, 206, 217);
-			rect(175,300,50,50); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(175,300,60,60); //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(175,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
 		if (pc1 === 0 && pc2 === 30 && pc3 === 255) { //blue
-			fill(28, 28, 28);
-			rect(225,300,60,60); //outline
-			fill(4, 206, 217);
-			rect(225,300,50,50); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(225,300,60,60); //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(225,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
 		if (pc1 === 245 && pc2 === 90 && pc3 === 0) { //orange
-			fill(28, 28, 28);
-			rect(275,300,60,60); //outline
-			fill(4, 206, 217);
-			rect(275,300,50,50); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(275,300,60,60); //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(275,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
 		if (pc1 === 227 && pc2 === 12 && pc3 === 227) { //pink
-			fill(28, 28, 28);
-			rect(325,300,60,60); //outline
-			fill(4, 206, 217);
-			rect(325,300,50,50); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(325,300,60,60); //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(325,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
 		if (pc1 === 0 && pc2 === 0 && pc3 === 0) { //black
-			fill(28, 28, 28);
-			rect(375,300,60,60); //outline
-			fill(4, 206, 217);
-			rect(375,300,50,50); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(375,300,60,60); //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(375,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
 		if (sound === 'ON') {
-			fill(28, 28, 28);
-			rect(202,371,76,50); //outline
-			fill(4, 206, 217);
-			rect(202,371,66,40); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(202,371,76,50); //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(202,371,66,40); //create rectangle at coordinates (inline)
 		}
 		
 		if (sound === 'OFF') {
-			fill(28, 28, 28);
-			rect(290,371,96,50); //outline
-			fill(4, 206, 217);
-			rect(290,371,86,40); //inline
+			fill(28, 28, 28); //set fill colour
+			rect(290,371,96,50); //create rectangle at coordinates (outline)
+			fill(4, 206, 217); //set fill colour
+			rect(290,371,86,40); //create rectangle at coordinates (inline)
 		}
 		
-		textFont("Tahoma");
-		textSize(41);
-		fill(255, 0, 0);
-		text('Level:',152,109);
-		text('Character:',106,243);
-		text('Sound:',36,382);
+		textFont("Tahoma"); //set font to Tahoma
+		textSize(41); //set text size to 41
+		fill(255, 0, 0); //set fill colour
+		text('Level:',152,109); //create text 'Level:'
+		text('Character:',106,243); //create text 'Character:'
+		text('Sound:',36,382); //create text 'Sound:'
 		
 		noStroke();
-		fill(37, 61, 4);
-		rect(50,150,75,50);
-		fill(204, 0, 0);
-		rect(150,150,75,50);
-		fill(0, 188, 209);
-		rect(250,150,75,50);
-		fill(209, 209, 0);
-		rect(350,150,75,50);
+		fill(37, 61, 4); //set fill colour
+		rect(50,150,75,50); //create rectangle at coordinates
+		fill(204, 0, 0); //set fill colour
+		rect(150,150,75,50); //create rectangle at coordinates
+		fill(0, 188, 209); //set fill colour
+		rect(250,150,75,50); //create rectangle at coordinates
+		fill(209, 209, 0); //set fill colour
+		rect(350,150,75,50); //create rectangle at coordinates
 		
-		fill(255, 255, 255);
-		textFont("Calibri");
-		textSize(23);
-		text("GRASS",19,159);
-		text("LAVA",126,159);
-		text("ICE",237,159);
-		text("DESERT",316,159);
+		fill(255, 255, 255); //set fill colour
+		textFont("Calibri"); //set font to Calibri
+		textSize(23); //set text size to 23
+		text("GRASS",19,159); //create text 'GRASS'
+		text("LAVA",126,159); //create text 'LAVA'
+		text("ICE",237,159); //create text 'ICE'
+		text("DESERT",316,159); //create text 'DESERT'
 		
 		noStroke();
-		fill(66, 6, 115); 
-		ellipse(25,300,40,40);
-		fill(204, 0, 0); 
-		ellipse(75,300,40,40);
-		fill(222, 215, 4);
-		ellipse(125,300,40,40);
-		fill(3, 89, 1);
-		ellipse(175,300,40,40);
-		fill(0, 30, 255);
-		ellipse(225,300,40,40);
-		fill(245, 90, 0);
-		ellipse(275,300,40,40);
-		fill(227, 12, 227);
-		ellipse(325,300,40,40);
-		fill(0, 0, 0);
-		ellipse(375,300,40,40);
+		fill(66, 6, 115); //set fill colour
+		ellipse(25,300,40,40); //create circle at coordinates
+		fill(204, 0, 0); //set fill colour
+		ellipse(75,300,40,40); //create circle at coordinates
+		fill(222, 215, 4); //set fill colour
+		ellipse(125,300,40,40); //create circle at coordinates
+		fill(3, 89, 1); //set fill colour
+		ellipse(175,300,40,40); //create circle at coordinates
+		fill(0, 30, 255); //set fill colour
+		ellipse(225,300,40,40); //create circle at coordinates
+		fill(245, 90, 0); //set fill colour
+		ellipse(275,300,40,40); //create circle at coordinates
+		fill(227, 12, 227); //set fill colour
+		ellipse(325,300,40,40); //create circle at coordinates
+		fill(0, 0, 0); //set fill colour
+		ellipse(375,300,40,40); //create circle at coordinates
 		
-		textFont("Trebuchet");
-		textSize(40);
-		text("ON",172,385);
-		text("OFF",250,385);
+		textFont("Trebuchet"); //set font to Trebuchet
+		textSize(40); //set text size to 40
+		text("ON",172,385); //create text 'ON'
+		text("OFF",250,385); //create text 'OFF'
   }
 }
 
 function lose () {
 	if (screen === 'LOSE') {
-	    textFont("Impact");
-	    textSize(69);
-	    fill(0, 9, 255);
-	    text('YOU LOSE',76,149);
+	    textFont("Impact"); //set font to Impact
+	    textSize(69); //set text size to 69
+	    fill(0, 9, 255); //set fill colour
+	    text('YOU LOSE',76,149); //create text 'YOU LOSE'
+ 
+	    textFont("Helvetica"); //set font to Helvetica
+	    textSize(40); //set text size to 40
+	    fill(255, 0, 47); //set fill colour
+	    text('Your score was:', 17,250); //create text 'Your score was:'
+	    text(round(score),304,253); //create text for score
 
-	    textFont("Helvetica");
-	    textSize(40);
-	    fill(255, 0, 47);
-	    text('Your score was:', 17,250);
-	    text(round(score),304,253);
-
-	    fill(219, 7, 173);
-	    rect(200,340,200,50);
-	    fill(255, 255, 255);
-	    textFont("Trebuchet");
-	    textSize(30);
-	    text('RETRY',152,351);
+	    fill(219, 7, 173); //set fill colour
+	    rect(200,340,200,50); //create rectangle at coordinates
+	    fill(255, 255, 255); //set fill colour
+	    textFont("Trebuchet"); //set font to Trebuchet
+	    textSize(30); //set text size to 30
+	    text('RETRY',152,351); //create text 'RETRY'
 
 	    if (mouseIsPressed && mouseX >=100 && mouseX <=300 && mouseY >= 315 && mouseY <= 365) {
 		screen = 'MENU';    
@@ -453,33 +453,33 @@ function lose () {
 				buttonSound.play ();
 			}
 	    }
-	    textFont("Trebuchet");
-	    textSize(20);
+	    textFont("Trebuchet"); //set font to Trebuchet
+	    textSize(20); //set text size to 20
 	    if (loseMessage === 1) {
-		text("Try again next time!", 111,200);
+		text("Try again next time!", 111,200); //create text 'Try again next time!'
 	    }
 	    if (loseMessage === 2) {
-		text("You can do better than that!", 80,200);
+		text("You can do better than that!", 80,200); //create text 'You can do better than that!'
 	    }
 	    if (loseMessage === 3) {
-		text("Try out some new settings next time!", 43,200);
+		text("Try out some new settings next time!", 43,200); //create text 'Try out some new settings next time!'
 	    }
 	    if (loseMessage === 4) {
-		text("Great job!", 152,200);
+		text("Great job!", 152,200); //create text 'Great job!'
 	    }
 	    if (loseMessage === 5) {
-		text("Try harder next time!", 107,200);
-	    }
+		text("Try harder next time!", 107,200); //create text 'Try harder next time!'
+	    } 
 	}
 };
 
 function player () {
 	if (screen === 'GAME') {
-		fill (pc1, pc2, pc3);
-		ellipse(x,y,40,40);  
+		fill (pc1, pc2, pc3); //set fill colour
+		ellipse(x,y,40,40); //create circle at coordinates
 		noStroke ();
-		fill(255, 128, 0);
-		
+		fill(255, 128, 0); //set fill colour
+		 
 		x = x + speedX;
 		y = y + speedY;
 		
@@ -509,54 +509,54 @@ function keyTyped () {
 function display () {
 	if (screen === 'GAME') {
 		score = score + 0.05;
-		fill(196, 182, 182,0);
+		fill(196, 182, 182,0); //set fill colour
 		noStroke();
-		rect(0, 0, 71, 15);
-		textFont("Arial");
-		textSize (12);
-		fill(0, 0, 0);
-		text ("Score:", 1,13);
-		text (round(score), 38,13);	
+		rect(0, 0, 71, 15); //create rectangle at coordinates
+		textFont("Arial"); //set font to Arial
+		textSize (12); //set text size to 12
+		fill(0, 0, 0); //set fill colour
+		text ("Score:", 1,13); //create text 'Score:'
+		text (round(score), 38,13); //create text of score	
 		
 		if (lives === 5) {
-			fill(0, 0, 0, 0);
-			rect(372,7,60,15);
-			fill(0, 255, 4);
-			ellipse (346,7,10,10);
-			ellipse (358,7,10,10);
-			ellipse (370,7,10,10);
-			ellipse (382,7,10,10);
-			ellipse (394,7,10,10);
+			fill(0, 0, 0, 0); //set fill colour
+			rect(372,7,60,15); //create rectangle at coordinates
+			fill(0, 255, 4); //set fill colour
+			ellipse (346,7,10,10); //create circle at coordinates
+			ellipse (358,7,10,10); //create circle at coordinates
+			ellipse (370,7,10,10); //create circle at coordinates
+			ellipse (382,7,10,10); //create circle at coordinates
+			ellipse (394,7,10,10); //create circle at coordinates
 		}
-		if (lives === 4) {
-			fill(0,0,0,0);
-			rect(372,7.5,60,15);
-			fill (179, 255, 0);
-			ellipse (358,7,10,10);
-			ellipse (370,7,10,10);
-			ellipse (382,7,10,10);
-			ellipse (394,7,10,10);
+		if (lives === 4) { 
+			fill(0,0,0,0); //set fill colour
+			rect(372,7.5,60,15); //create rectangle at coordinates
+			fill (179, 255, 0); //set fill colour
+			ellipse (358,7,10,10); //create circle at coordinates
+			ellipse (370,7,10,10); //create circle at coordinates
+			ellipse (382,7,10,10); //create circle at coordinates
+			ellipse (394,7,10,10); //create circle at coordinates
 		}
 		if (lives === 3) {
-			fill(0,0,0,0);
-			rect(372,7,60,15);
-			fill (199, 209, 7);
-			ellipse (370,7,10,10);
-			ellipse (382,7,10,10);
-			ellipse (394,7,10,10);
+			fill(0,0,0,0); //set fill colour
+			rect(372,7,60,15); //create rectangle at coordinates
+			fill (199, 209, 7); //set fill colour
+			ellipse (370,7,10,10); //create circle at coordinates
+			ellipse (382,7,10,10); //create circle at coordinates
+			ellipse (394,7,10,10); //create circle at coordinates
 		}
 		if (lives === 2) {
-			fill(0,0,0,0);
-			rect(372,7,60,15);
-			fill (207, 137, 8);
-			ellipse (382,7,10,10);
-			ellipse (394,7,10,10);
+			fill(0,0,0,0); //set fill colour
+			rect(372,7,60,15); //create rectangle at coordinates
+			fill (207, 137, 8); //set fill colour
+			ellipse (382,7,10,10); //create circle at coordinates
+			ellipse (394,7,10,10); //create circle at coordinates
 		}
 		if (lives === 1) {
-			fill(0,0,0,0);
-			rect(372,7,60,15);
-			fill (207, 8, 8);
-			ellipse (394,7,10,10);
+			fill(0,0,0,0); //set fill colour
+			rect(372,7,60,15); //create rectangle at coordinates
+			fill (207, 8, 8); //set fill colour
+			ellipse (394,7,10,10); //create circle at coordinates
 		}
 		if (lives <= 0) {
 			screen = 'LOSE';
@@ -613,122 +613,117 @@ function bckground() {
 		}
 		
 		noStroke();
-		fill(c1, c2, c3);
-		rect(200,25,400,50);
-		rect(200,375,400,50);
+		fill(c1, c2, c3); //set fill colour
+		rect(200,25,400,50); //create rectangle at coordinates
+		rect(200,375,400,50); //create rectangle at coordinates
 		
-		fill(c1A, c2A, c3A);
+		fill(c1A, c2A, c3A); //set fill colour
 		triangle(0,50,20,50,20,15);
-		fill(c1B, c2B, c3B);
+		fill(c1B, c2B, c3B); //set fill colour
 		triangle(40,50,20,50,20,15);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40,50,20+40,50,20+40,15);
-		fill(c1B, c2B, c3B);
-		triangle(40+40,50,20+40,50,20+40,15);
+		fill(c1A, c2A, c3A); //set fill colour
+		triangle(40,50,60,50,60,15);
+		fill(c1B, c2B, c3B); //set fill colour
+		triangle(80,50,60,50,60,15);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40,50,20+40+40,50,20+40+40,15);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40,50,20+40+40,50,20+40+40,15);
+		fill(c1A, c2A, c3A); //set fill colour
+		triangle(80,50,100,50,100,15);
+		fill(c1B, c2B, c3B); //set fill colour
+		triangle(120,50,100,50,100,15);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40,50,20+40+40+40,50,20+40+40+40,15);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40,50,20+40+40+40,50,20+40+40+40,15);
+		fill(c1A, c2A, c3A); //set fill colour
+		triangle(120,50,140,50,140,15);
+		fill(c1B, c2B, c3B); //set fill colour
+		triangle(160,50,140,50,140,15);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40,50,20+40+40+40+40,50,20+40+40+40+40,15);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40,50,20+40+40+40+40,50,20+40+40+40+40,15);
+		fill(c1A, c2A, c3A); //set fill colour
+		triangle(160,50,180,50,180,15);
+		fill(c1B, c2B, c3B); //set fill colour
+		triangle(200,50,180,50,180,15);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40+40,50,20+40+40+40+40+40,50,20+40+40+40+40+40,15);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40+40,50,20+40+40+40+40+40,50,20+40+40+40+40+40,15);
+		fill(c1A, c2A, c3A); //set fill colour
+		triangle(200,50,220,50,220,15);
+		fill(c1B, c2B, c3B); //set fill colour
+		triangle(240,50,220,50,220,15);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40+40+40,50,20+40+40+40+40+40+40,50,20+40+40+40+40+40+40,15);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40+40+40,50,20+40+40+40+40+40+40,50,20+40+40+40+40+40+40,15);
+		fill(c1A, c2A, c3A); //set fill colour
+		triangle(240,50,260,50,260,15);
+		fill(c1B, c2B, c3B); //set fill colour
+		triangle(280,50,260,50,260,15);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40,15);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40,15);
+		fill(c1A, c2A, c3A); //set fill colour
+		triangle(280,50,300,50,300,15);
+		fill(c1B, c2B, c3B); //set fill colour
+		triangle(320,50,300,50,300,15);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40+40,15);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40+40,15);
+		fill(c1A, c2A, c3A); //set fill colour
+		triangle(320,50,340,50,340,15);
+		fill(c1B, c2B, c3B); //set fill colour
+		triangle(360,50,340,50,340,15);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40+40+40,15);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40+40+40,50,20+40+40+40+40+40+40+40+40+40,15);
+		fill(c1A, c2A, c3A); //set fill colour
+		triangle(360,50,380,50,380,15);
+		fill(c1B, c2B, c3B); //set fill colour
+		triangle(400,50,380,50,380,15);
 		
-		fill(c1A, c2A, c3A);
+		fill(c1A, c2A, c3A); //set fill colour
 		triangle(0,350,20,350,20,385);
-		fill(c1B, c2B, c3B);
+		fill(c1B, c2B, c3B); //set fill colour
 		triangle(40,350,20,350,20,385);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0,350,20,350,20,385);
-		fill(c1B, c2B, c3B);
-		triangle(40,350,20,350,20,385);
+		fill(c1A, c2A, c3A); //set fill colour
+		triangle(40,350,60,350,60,385);
+		fill(c1B, c2B, c3B); //set fill colour
+		triangle(80,350,60,350,60,385);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40,350,20+40,350,20+40,385);
-		fill(c1B, c2B, c3B);
-		triangle(40+40,350,20+40,350,20+40,385);
+		fill(c1A, c2A, c3A); //set fill colour
+		triangle(80,350,100,350,100,385);
+		fill(c1B, c2B, c3B); //set fill colour
+		triangle(120,350,100,350,100,385);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40,350,20+40+40,350,20+40+40,385);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40,350,20+40+40,350,20+40+40,385);
+		fill(c1A, c2A, c3A);//set fill colour
+		triangle(120,350,140,350,140,385);
+		fill(c1B, c2B, c3B);//set fill colour
+		triangle(160,350,140,350,140,385);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40,350,20+40+40+40,350,20+40+40+40,385);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40,350,20+40+40+40,350,20+40+40+40,385);
+		fill(c1A, c2A, c3A);//set fill colour
+		triangle(160,350,180,350,180,385);
+		fill(c1B, c2B, c3B);//set fill colour
+		triangle(200,350,180,350,180,385);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40,350,20+40+40+40+40,350,20+40+40+40+40,385);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40,350,20+40+40+40+40,350,20+40+40+40+40,385);
+		fill(c1A, c2A, c3A);//set fill colour
+		triangle(200,350,220,350,220,385);
+		fill(c1B, c2B, c3B);//set fill colour
+		triangle(240,350,220,350,220,385);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40+40,350,20+40+40+40+40+40,350,20+40+40+40+40+40,385);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40+40,350,20+40+40+40+40+40,350,20+40+40+40+40+40,385);
+		fill(c1A, c2A, c3A);//set fill colour
+		triangle(240,350,260,350,260,385);
+		fill(c1B, c2B, c3B);//set fill colour
+		triangle(280,350,260,350,260,385);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40+40+40,350,20+40+40+40+40+40+40,350,20+40+40+40+40+40+40,385);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40+40+40,350,20+40+40+40+40+40+40,350,20+40+40+40+40+40+40,385);
+		fill(c1A, c2A, c3A);//set fill colour
+		triangle(280,350,300,350,300,385);
+		fill(c1B, c2B, c3B);//set fill colour
+		triangle(320,350,300,350,300,385);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40,385);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40,385);
+		fill(c1A, c2A, c3A);//set fill colour
+		triangle(320,350,340,350,340,385);
+		fill(c1B, c2B, c3B);//set fill colour
+		triangle(360,350,340,350,340,385);
 		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40+40,385);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40+40,385);
-		
-		fill(c1A, c2A, c3A);
-		triangle(0+40+40+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40+40+40,385);
-		fill(c1B, c2B, c3B);
-		triangle(40+40+40+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40+40+40,350,20+40+40+40+40+40+40+40+40+40,385);
+		fill(c1A, c2A, c3A);//set fill colour
+		triangle(360,350,380,350,380,385);
+		fill(c1B, c2B, c3B);//set fill colour
+		triangle(400,350,380,350,380,385);
 	}	
 }
 
 function obst () {
 	if (screen === 'GAME') {
-		fill(102, 107, 107);
-		rect(objX1+20,objY1+20,40,40);
-		fill(115, 115, 115);
+		fill(102, 107, 107);//set fill colour
+		rect(objX1+20,objY1+20,40,40); //create rectangle at coordinates
+		fill(115, 115, 115);//set fill colour
 		triangle(objX1,objY1,objX1+40,objY1,objX1+40,objY1+40);
 
 		objX1 = objX1 + objectSpeed;
@@ -738,9 +733,9 @@ function obst () {
 			objY1 = random(50,310);
 		}
 		if (score >= 20) {
-			fill(102, 107, 107);
-			rect(objX2+20,objY2+20,40,40);
-			fill(115, 115, 115);
+			fill(102, 107, 107);//set fill colour
+			rect(objX2+20,objY2+20,40,40); //create rectangle at coordinates
+			fill(115, 115, 115);//set fill colour
 			triangle(objX2,objY2,objX2+40,objY2,objX2+40,objY2+40);
 			objX2 = objX2 + objectSpeed + 0.1;
 		}
@@ -750,9 +745,9 @@ function obst () {
 		}
 		
 		if (score >= 40) {
-			fill(102, 107, 107);
-			rect(objX3+20,objY3+20,40,40);
-			fill(115, 115, 115);
+			fill(102, 107, 107);//set fill colour
+			rect(objX3+20,objY3+20,40,40); //create rectangle at coordinates
+			fill(115, 115, 115);//set fill colour
 			triangle(objX3,objY3,objX3+40,objY3,objX3+40,objY3+40);
 			objX3 = objX3 + objectSpeed + 0.2;
 		}
@@ -762,9 +757,9 @@ function obst () {
 		}
 		
 		if (score >= 60) {
-			fill(102, 107, 107);
-			rect(objX4+20,objY4+20,40,40);
-			fill(115, 115, 115);
+			fill(102, 107, 107);//set fill colour
+			rect(objX4+20,objY4+20,40,40); //create rectangle at coordinates
+			fill(115, 115, 115);//set fill colour
 			triangle(objX4,objY4,objX4+40,objY4,objX4+40,objY4+40);
 			objX4 = objX4 + objectSpeed + 0.3;
 		}
@@ -775,9 +770,9 @@ function obst () {
 		}
 		
 		if (score >= 90) {
-			fill(102, 107, 107);
-			rect(objX5+20,objY5+20,40,40);
-			fill(115, 115, 115);
+			fill(102, 107, 107);//set fill colour
+			rect(objX5+20,objY5+20,40,40); //create rectangle at coordinates
+			fill(115, 115, 115);//set fill colour
 			triangle(objX5,objY5,objX5+40,objY5,objX5+40,objY5+40);
 			objX5 = objX5 + objectSpeed + 0.4;
 		}
@@ -788,9 +783,9 @@ function obst () {
 		}
 		
 		if (score >= 150) {
-			fill(102, 107, 107);
-			rect(objX6+20,objY6+20,40,40);
-			fill(115, 115, 115);
+			fill(102, 107, 107);//set fill colour
+			rect(objX6+20,objY6+20,40,40); //create rectangle at coordinates
+			fill(115, 115, 115);//set fill colour
 			triangle(objX6,objY6,objX6+40,objY6,objX6+40,objY6+40);
 			objX6 = objX6 + objectSpeed + 0.4;
 		}
@@ -850,4 +845,3 @@ function obst () {
 		}
 	}
 }
-	
