@@ -47,11 +47,11 @@ function setup() {
 	loseMessage = floor(random(1, 5));
 }
 
-/*function preload() {
-	buttonSound = loadSound('395541__alayan__button-click.wav'); 
+function preload() {
+	//buttonSound = loadSound('395541__alayan__button-click.wav'); 
 	lifeSound = loadSound('Realistic Punch Mark.wav'); 
 	loseSound = loadSound('Sad Trombone Sound Effect.mp3'); 
-} */
+} 
 
 function draw() {
     background(4, 206, 217);
@@ -486,7 +486,7 @@ function display () {
 			ellipse (382,7,10,10);
 			ellipse (394,7,10,10);
 			if (sound === 'ON') {
-				//lifeSound.play ();
+				lifeSound.play ();
 			}
 		}
 		if (lives === 4) {
@@ -498,7 +498,7 @@ function display () {
 			ellipse (382,7,10,10);
 			ellipse (394,7,10,10);
 			if (sound === 'ON') {
-				//lifeSound.play ();
+				lifeSound.play ();
 			}
 		}
 		if (lives === 3) {
@@ -509,7 +509,7 @@ function display () {
 			ellipse (382,7,10,10);
 			ellipse (394,7,10,10);
 			if (sound === 'ON') {
-				//lifeSound.play ();
+				lifeSound.play ();
 			}
 		}
 		if (lives === 2) {
@@ -519,7 +519,7 @@ function display () {
 			ellipse (382,7,10,10);
 			ellipse (394,7,10,10);
 			if (sound === 'ON') {
-				//lifeSound.play ();
+				lifeSound.play ();
 			}
 		}
 		if (lives === 1) {
@@ -528,13 +528,13 @@ function display () {
 			fill (207, 8, 8);
 			ellipse (394,7,10,10);
 			if (sound === 'ON') {
-				//lifeSound.play ();
+				lifeSound.play ();
 			}
 		}
 		if (lives <= 0) {
 			screen = 'LOSE';
 			if (sound === 'ON') {
-				//loseSound.play ();
+				loseSound.play ();
 			}
 		}
 	}
