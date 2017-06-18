@@ -130,7 +130,7 @@ function how () {
 		text('» Avoid hitting the obstacles',32,146);
 		text('» Everytime you hit a square you will',32,186);
 		text('lose one life',10,210);
-		text('» The score will go up for as long as you are alive',32,246);
+		text('» The score will go up for as long as',32,246);
 		text('you are alive',10,246+24);
 		text('» Stay alive for as long as you can!',32,306);
 		
