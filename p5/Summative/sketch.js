@@ -45,6 +45,8 @@ function setup() {
 	myCanvas.parent('Summative Game'); //create id for p5 sketch inorder to be able to insert it in html code
 	rectMode(CENTER);
 	loseMessage = floor(random(1, 5));
+	lifeSound.setVolume(0.1);
+	loseSound.setVolume(0.1);
 }
 
 function preload() {
