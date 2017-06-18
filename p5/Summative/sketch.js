@@ -487,9 +487,6 @@ function display () {
 			ellipse (370,7,10,10);
 			ellipse (382,7,10,10);
 			ellipse (394,7,10,10);
-			if (sound === 'ON') {
-				lifeSound.play ();
-			}
 		}
 		if (lives === 4) {
 			fill(0,0,0,0);
