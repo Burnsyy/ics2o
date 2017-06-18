@@ -444,11 +444,11 @@ function lose () { //function for lose screen
 	    textSize(30); //set text size to 30
 	    text('RETRY',152,351); //create text 'RETRY'
 
-	    if (mouseIsPressed && mouseX >=100 && mouseX <=300 && mouseY >= 315 && mouseY <= 365) {
-		screen = 'MENU';    
-		lives = 5;
-		score = 0;
-		loseMessage = floor(random(1, 5));
+	    if (mouseIsPressed && mouseX >=100 && mouseX <=300 && mouseY >= 315 && mouseY <= 365) { //if mouse is pressed on retry button do the following:
+		screen = 'MENU'; //set screen to menu screen
+		lives = 5; //set lives to 5
+		score = 0; //set score to 0
+		loseMessage = floor(random(1, 5)); //generate new random lose message
 		    if (sound === 'ON') {  //if sound is on play button sound
 				buttonSound.play ();
 			}
@@ -479,14 +479,12 @@ function player () {  //function for player
 		ellipse(x,y,40,40); //create circle at coordinates
 		noStroke (); // take away outline
 		fill(255, 128, 0); //set fill colour
-		 
-		x = x + speedX;
-		y = y + speedY;
+		y = y + speedY; // y position of player = y position + speedY
 		
-		if (y <= 75) {
+		if (y <= 75) { //stop player if ball hits top of screen
 			speedY = 0;
 		}
-		if (y >= 325) {
+		if (y >= 325) { //stop player if ball hits bottom of screen
 			speedY = 0;
 		}
 	}
@@ -494,11 +492,11 @@ function player () {  //function for player
 
 function keyTyped () { //function to check is w is pressed
 	if (screen === 'GAME') { //run code only if screen is set to 'game'
-		if ( key === 'w') {
-			if (sttus === 1) {
+		if ( key === 'w') { //if w is pressed do the following
+			if (sttus === 1) { //if status is 1 move player down and change stattus
 				speedY = 4;
 				sttus = 2;
-			} else {
+			} else {//if status is 2 move player up and change stattus
 				speedY = -4;
 				sttus = 1;
 			}
@@ -508,7 +506,7 @@ function keyTyped () { //function to check is w is pressed
 
 function display () { //function for display
 	if (screen === 'GAME') { //run code only if screen is set to 'game'
-		score = score + 0.05;
+		score = score + 0.05; //add to score every frame player is alive
 		fill(196, 182, 182,0); //set fill colour
 		noStroke();// take away outline
 		rect(0, 0, 71, 15); //create rectangle at coordinates
@@ -570,7 +568,7 @@ function display () { //function for display
 
 function bckground() { //function for background
 	if (screen === 'GAME') { //run code only if screen is set to 'game'
-		if (setting === 1) {
+		if (setting === 1) { //if setting is 1 set triangle colours to green
 			c1 = 74;
 			c2 = 19;
 			c3 = 19;
@@ -580,7 +578,7 @@ function bckground() { //function for background
 			c1B = 19;
 			c2B = 107;
 			c3B = 31;
-		} else if (setting === 2) {
+		} else if (setting === 2) { //if setting is 2 set triangle colours to red
 			c1 = 166;
 			c2 = 46;
 			c3 = 46;
@@ -590,7 +588,7 @@ function bckground() { //function for background
 			c1B = 204;
 			c2B = 0;
 			c3B = 0;
-		} else if (setting === 3) {
+		} else if (setting === 3) { //if setting is 13 set triangle colours to blue
 			c1 = 255;
 			c2 = 255;
 			c3 = 255;
@@ -600,7 +598,7 @@ function bckground() { //function for background
 			c1B = 0;
 			c2B = 117;
 			c3B = 184;
-		} else if (setting === 4) {
+		} else if (setting === 4) { //if setting is 4 set triangle colours to yellow
 			c1 = 207;
 			c2 = 203;
 			c3 = 75;
