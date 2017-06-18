@@ -512,7 +512,7 @@ function display () { //function for display
 		rect(0, 0, 71, 15); //create rectangle at coordinates
 		textFont("Arial"); //set font to Arial
 		textSize (12); //set text size to 12
-		fill(0, 9, 255); //set fill colour
+		fill(0, 201, 90); //set fill colour
 		text ("Score:", 1,13); //create text 'Score:'
 		text (round(score), 38,13); //create text of score	
 		
