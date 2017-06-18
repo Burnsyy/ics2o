@@ -113,7 +113,7 @@ function menu () { //function for menu screen
 	}
 } 
 
-function how () {
+function how () { //function for how screen
 	
 	if (screen === 'HOW') { //run code only if screen is set to 'how'
 		textFont("Impact"); //set font to Impact
@@ -152,7 +152,7 @@ function how () {
 	} 
 }
 
-function options () {
+function options () { //function for options
 	if (screen === 'SETTINGS') { //run code only if screen is set to 'settings'
 		textFont("Impact"); //set font to Impact
 		textSize(69); //set text size to 69
@@ -381,7 +381,7 @@ function options () {
 		text('Character:',106,243); //create text 'Character:'
 		text('Sound:',36,382); //create text 'Sound:'
 		
-		noStroke();
+		noStroke(); // take away outline
 		fill(37, 61, 4); //set fill colour
 		rect(50,150,75,50); //create rectangle at coordinates
 		fill(204, 0, 0); //set fill colour
@@ -399,7 +399,7 @@ function options () {
 		text("ICE",237,159); //create text 'ICE'
 		text("DESERT",316,159); //create text 'DESERT'
 		
-		noStroke();
+		noStroke(); // take away outline
 		fill(66, 6, 115); //set fill colour
 		ellipse(25,300,40,40); //create circle at coordinates
 		fill(204, 0, 0); //set fill colour
@@ -424,7 +424,7 @@ function options () {
   }
 }
 
-function lose () {
+function lose () { //function for lose screen
 	if (screen === 'LOSE') { //run code only if screen is set to 'lose'
 	    textFont("Impact"); //set font to Impact
 	    textSize(69); //set text size to 69
@@ -473,11 +473,11 @@ function lose () {
 	}
 };
 
-function player () {
+function player () {  //function for player
 	if (screen === 'GAME') { //run code only if screen is set to 'game'
 		fill (pc1, pc2, pc3); //set fill colour
 		ellipse(x,y,40,40); //create circle at coordinates
-		noStroke ();
+		noStroke (); // take away outline
 		fill(255, 128, 0); //set fill colour
 		 
 		x = x + speedX;
@@ -492,7 +492,7 @@ function player () {
 	}
 }
 
-function keyTyped () {
+function keyTyped () { //function to check is w is pressed
 	if (screen === 'GAME') { //run code only if screen is set to 'game'
 		if ( key === 'w') {
 			if (sttus === 1) {
@@ -506,11 +506,11 @@ function keyTyped () {
 	}
 } 
 
-function display () {
+function display () { //function for display
 	if (screen === 'GAME') { //run code only if screen is set to 'game'
 		score = score + 0.05;
 		fill(196, 182, 182,0); //set fill colour
-		noStroke();
+		noStroke();// take away outline
 		rect(0, 0, 71, 15); //create rectangle at coordinates
 		textFont("Arial"); //set font to Arial
 		textSize (12); //set text size to 12
@@ -568,7 +568,7 @@ function display () {
 	}
 }
 
-function bckground() {
+function bckground() { //function for background
 	if (screen === 'GAME') { //run code only if screen is set to 'game'
 		if (setting === 1) {
 			c1 = 74;
@@ -612,7 +612,7 @@ function bckground() {
 			c3B = 0;
 		}
 		
-		noStroke();
+		noStroke(); // take away outline
 		fill(c1, c2, c3); //set fill colour
 		rect(200,25,400,50); //create rectangle at coordinates
 		rect(200,375,400,50); //create rectangle at coordinates
@@ -719,7 +719,7 @@ function bckground() {
 	}	
 }
 
-function obst () {
+function obst () { //function for obstacles
 	if (screen === 'GAME') { //run code only if screen is set to 'game'
 		fill(102, 107, 107);//set fill colour
 		rect(objX1+20,objY1+20,40,40); //create rectangle at coordinates
