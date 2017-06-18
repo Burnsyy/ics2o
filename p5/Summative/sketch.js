@@ -98,13 +98,13 @@ function menu () { //function for menu screen
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX >= 30 && mouseX <= 170 && mouseY >= 300 && mouseY <= 350) {
+		if (mouseIsPressed && mouseX >= 30 && mouseX <= 170 && mouseY >= 300 && mouseY <= 350) { //if mouse is pressed on how button change screen to how screen
 			screen = 'HOW';
 			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX >= 230 && mouseX <= 370 && mouseY >= 300 && mouseY <= 350) {
+		if (mouseIsPressed && mouseX >= 230 && mouseX <= 370 && mouseY >= 300 && mouseY <= 350) { //if mouse is pressed on settings button change screen to settings screen
 			screen = 'SETTINGS';
 			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
@@ -339,35 +339,35 @@ function options () { //function for options
 			rect(225,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
-		if (pc1 === 245 && pc2 === 90 && pc3 === 0) { //orange
+		if (pc1 === 245 && pc2 === 90 && pc3 === 0) { //if player color is orange make outline around orange circle
 			fill(28, 28, 28); //set fill colour
 			rect(275,300,60,60); //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
 			rect(275,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
-		if (pc1 === 227 && pc2 === 12 && pc3 === 227) { //pink
+		if (pc1 === 227 && pc2 === 12 && pc3 === 227) { //if player color is pink make outline around pink circle
 			fill(28, 28, 28); //set fill colour
 			rect(325,300,60,60); //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
 			rect(325,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
-		if (pc1 === 0 && pc2 === 0 && pc3 === 0) { //black
+		if (pc1 === 0 && pc2 === 0 && pc3 === 0) { //if player color is black make outline around black circle
 			fill(28, 28, 28); //set fill colour
 			rect(375,300,60,60); //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
 			rect(375,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
-		if (sound === 'ON') {
+		if (sound === 'ON') {//if sound is on create outline around on
 			fill(28, 28, 28); //set fill colour
 			rect(202,371,76,50); //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
 			rect(202,371,66,40); //create rectangle at coordinates (inline)
 		}
 		
-		if (sound === 'OFF') {
+		if (sound === 'OFF') {//if sound is off create outline around off
 			fill(28, 28, 28); //set fill colour
 			rect(290,371,96,50); //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
@@ -455,19 +455,19 @@ function lose () { //function for lose screen
 	    }
 	    textFont("Trebuchet"); //set font to Trebuchet
 	    textSize(20); //set text size to 20
-	    if (loseMessage === 1) {
+	    if (loseMessage === 1) { //if lose message is 1 write the following message on lose screen:
 		text("Try again next time!", 111,200); //create text 'Try again next time!'
 	    }
-	    if (loseMessage === 2) {
+	    if (loseMessage === 2) {//if lose message is 2 write the following message on lose screen:
 		text("You can do better than that!", 80,200); //create text 'You can do better than that!'
 	    }
-	    if (loseMessage === 3) {
+	    if (loseMessage === 3) {//if lose message is 3 write the following message on lose screen:
 		text("Try out some new settings next time!", 43,200); //create text 'Try out some new settings next time!'
 	    }
-	    if (loseMessage === 4) {
+	    if (loseMessage === 4) {//if lose message is 4 write the following message on lose screen:
 		text("Great job!", 152,200); //create text 'Great job!'
 	    }
-	    if (loseMessage === 5) {
+	    if (loseMessage === 5) {//if lose message is 5 write the following message on lose screen:
 		text("Try harder next time!", 107,200); //create text 'Try harder next time!'
 	    } 
 	}
@@ -516,7 +516,7 @@ function display () { //function for display
 		text ("Score:", 1,13); //create text 'Score:'
 		text (round(score), 38,13); //create text of score	
 		
-		if (lives === 5) {
+		if (lives === 5) { //if player has 5 lives draw 5 circles at top right of screen
 			fill(0, 0, 0, 0); //set fill colour
 			rect(372,7,60,15); //create rectangle at coordinates
 			fill(0, 255, 4); //set fill colour
@@ -526,7 +526,7 @@ function display () { //function for display
 			ellipse (382,7,10,10); //create circle at coordinates
 			ellipse (394,7,10,10); //create circle at coordinates
 		}
-		if (lives === 4) { 
+		if (lives === 4) { //if player has 4 lives draw 4 circles at top right of screen
 			fill(0,0,0,0); //set fill colour
 			rect(372,7.5,60,15); //create rectangle at coordinates
 			fill (179, 255, 0); //set fill colour
@@ -535,7 +535,7 @@ function display () { //function for display
 			ellipse (382,7,10,10); //create circle at coordinates
 			ellipse (394,7,10,10); //create circle at coordinates
 		}
-		if (lives === 3) {
+		if (lives === 3) { //if player has 3 lives draw 3 circles at top right of screen
 			fill(0,0,0,0); //set fill colour
 			rect(372,7,60,15); //create rectangle at coordinates
 			fill (199, 209, 7); //set fill colour
@@ -543,20 +543,20 @@ function display () { //function for display
 			ellipse (382,7,10,10); //create circle at coordinates
 			ellipse (394,7,10,10); //create circle at coordinates
 		}
-		if (lives === 2) {
+		if (lives === 2) { //if player has 2 lives draw 2 circles at top right of screen
 			fill(0,0,0,0); //set fill colour
 			rect(372,7,60,15); //create rectangle at coordinates
 			fill (207, 137, 8); //set fill colour
 			ellipse (382,7,10,10); //create circle at coordinates
 			ellipse (394,7,10,10); //create circle at coordinates
 		}
-		if (lives === 1) {
+		if (lives === 1) { //if player has 1 life draw 1 circle at top right of screen
 			fill(0,0,0,0); //set fill colour
 			rect(372,7,60,15); //create rectangle at coordinates
 			fill (207, 8, 8); //set fill colour
 			ellipse (394,7,10,10); //create circle at coordinates
 		}
-		if (lives <= 0) {
+		if (lives <= 0) { //if player has 0 lives change screen to lose screen
 			screen = 'LOSE';
 			if (sound === 'ON') { //if sound is on play lose sound
 				loseSound.play ();
@@ -724,22 +724,22 @@ function obst () { //function for obstacles
 		fill(115, 115, 115);//set fill colour
 		triangle(objX1,objY1,objX1+40,objY1,objX1+40,objY1+40); //create triangle on obstacle
 
-		objX1 = objX1 + objectSpeed;
+		objX1 = objX1 + objectSpeed; //increase speed of object over time
 		
-		if (objX1 <= -40) {
-			objX1 = random(400,500);
-			objY1 = random(50,310);
+		if (objX1 <= -40) { //if object has left the screen move it back to the right
+			objX1 = random(400,500); //change object x value to random position between 400 and 500
+			objY1 = random(70,330); //change object y value to random position between 70 and 330
 		}
 		if (score >= 20) {
 			fill(102, 107, 107);//set fill colour
 			rect(objX2+20,objY2+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
 			triangle(objX2,objY2,objX2+40,objY2,objX2+40,objY2+40); //create triangle on obstacle
-			objX2 = objX2 + objectSpeed + 0.1;
+			objX2 = objX2 + objectSpeed + 0.1;  //increase speed of object over time
 		}
-		if (objX2 <= -40) {
-			objX2 = random(400,500);
-			objY2 = random(70,330);
+		if (objX2 <= -40) { //if object has left the screen move it back to the right
+			objX2 = random(400,500); //change object x value to random position between 400 and 500
+			objY2 = random(70,330); //change object y value to random position between 70 and 330
 		}
 		
 		if (score >= 40) {
@@ -747,11 +747,11 @@ function obst () { //function for obstacles
 			rect(objX3+20,objY3+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
 			triangle(objX3,objY3,objX3+40,objY3,objX3+40,objY3+40); //create triangle on obstacle
-			objX3 = objX3 + objectSpeed + 0.2;
+			objX3 = objX3 + objectSpeed + 0.2;  //increase speed of object over time
 		}
-		if (objX3 <= -40) {
-			objX3 = random(400,500);
-			objY3 = random(70,330);
+		if (objX3 <= -40) { //if object has left the screen move it back to the right
+			objX3 = random(400,500); //change object x value to random position between 400 and 500
+			objY3 = random(70,330); //change object y value to random position between 70 and 330
 		}
 		
 		if (score >= 60) {
@@ -759,12 +759,12 @@ function obst () { //function for obstacles
 			rect(objX4+20,objY4+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
 			triangle(objX4,objY4,objX4+40,objY4,objX4+40,objY4+40); //create triangle on obstacle
-			objX4 = objX4 + objectSpeed + 0.3;
+			objX4 = objX4 + objectSpeed + 0.3;  //increase speed of object over time
 		}
 		
-		if (objX4 <= -40) {
-			objX4 = random(400,500);
-			objY4 = random(70,330);
+		if (objX4 <= -40) { //if object has left the screen move it back to the right
+			objX4 = random(400,500); //change object x value to random position between 400 and 500
+			objY4 = random(70,330); //change object y value to random position between 70 and 330
 		}
 		
 		if (score >= 90) {
@@ -772,12 +772,12 @@ function obst () { //function for obstacles
 			rect(objX5+20,objY5+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
 			triangle(objX5,objY5,objX5+40,objY5,objX5+40,objY5+40) //create triangle on obstacle
-			objX5 = objX5 + objectSpeed + 0.4;
+			objX5 = objX5 + objectSpeed + 0.4;  //increase speed of object over time
 		}
 		
-		if (objX5 <= -40) {
-			objX5 = random(400,500);
-			objY5 = random(70,330);
+		if (objX5 <= -40) { //if object has left the screen move it back to the right
+			objX5 = random(400,500); //change object x value to random position between 400 and 500
+			objY5 = random(70,330); //change object y value to random position between 70 and 330
 		}
 		
 		if (score >= 150) {
@@ -785,15 +785,15 @@ function obst () { //function for obstacles
 			rect(objX6+20,objY6+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
 			triangle(objX6,objY6,objX6+40,objY6,objX6+40,objY6+40); //create triangle on obstacle
-			objX6 = objX6 + objectSpeed + 0.4;
+			objX6 = objX6 + objectSpeed + 0.4;  //increase speed of object over time
 		}
 		
-		if (objX6 <= -40) {
-			objX6 = random(400,500);
-			objY6 = random(70,330);
+		if (objX6 <= -40) { //if object has left the screen move it back to the right
+			objX6 = random(400,500); //change object x value to random position between 400 and 500
+			objY6 = random(70,330); //change object y value to random position between 70 and 330
 		}
 		
-		if ((abs(x-objX1)<10) && (abs(y-objY1)<20)) {
+		if ((abs(x-objX1)<10) && (abs(y-objY1)<40)) { //if player hits object move object and take away one life
 		objX1 = 500;
 		objY1 = random(70,330);
 			lives = lives - 1;    
@@ -801,7 +801,7 @@ function obst () { //function for obstacles
 				lifeSound.play ();
 			}
 		}
-		if ((abs(x-objX2)<10) && (abs(y-objY2)<40)) {
+		if ((abs(x-objX2)<10) && (abs(y-objY2)<40)) { //if player hits object move object and take away one life
 		objX2 = 500;
 		objY2 = random(70,330);
 		lives = lives - 1;
@@ -809,7 +809,7 @@ function obst () { //function for obstacles
 				lifeSound.play ();
 			}
 		}
-		if ((abs(x-objX3)<10) && (abs(y-objY3)<40)) {
+		if ((abs(x-objX3)<10) && (abs(y-objY3)<40)) { //if player hits object move object and take away one life
 		objX3 = 500;
 		objY3 = random(70,330); 
 		lives = lives - 1;
@@ -817,7 +817,7 @@ function obst () { //function for obstacles
 				lifeSound.play ();
 			}
 		}
-		if ((abs(x-objX4)<10) && (abs(y-objY4)<40)) {
+		if ((abs(x-objX4)<10) && (abs(y-objY4)<40)) { //if player hits object move object and take away one life
 		objX4 = 500;
 		objY4 = random(70,330);   
 		lives = lives - 1; 
@@ -825,7 +825,7 @@ function obst () { //function for obstacles
 				lifeSound.play ();
 			}
 		}
-		if ((abs(x-objX5)<10) && (abs(y-objY5)<40)) {
+		if ((abs(x-objX5)<10) && (abs(y-objY5)<40)) { //if player hits object move object and take away one life
 		objX5 = 500;
 		objY5 = random(70,330);   
 		lives = lives - 1; 
@@ -833,7 +833,7 @@ function obst () { //function for obstacles
 				lifeSound.play ();
 			}
 		}
-		if ((abs(x-objX6)<10) && (abs(y-objY6)<40)) {
+		if ((abs(x-objX6)<10) && (abs(y-objY6)<40)) { //if player hits object move object and take away one life
 		objX6 = 500;
 		objY6 = random(70,330);   
 		lives = lives - 1; 
