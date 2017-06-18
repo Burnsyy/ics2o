@@ -92,21 +92,21 @@ function menu () { //function for menu screen
 		text('HOW', 68, 337); //create text 'HOW'
 		text("SETTINGS",232, 337); //create text 'SETTINGS'
 		
-		if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) {
+		if (mouseIsPressed && mouseX >= 80 && mouseX <= 320 && mouseY >= 175 && mouseY <= 225) { //if mouse is pressed on start game button start game
 			screen = 'GAME';
-			if (sound === 'ON') {
+			if (sound === 'ON') {  //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
 		if (mouseIsPressed && mouseX >= 30 && mouseX <= 170 && mouseY >= 300 && mouseY <= 350) {
 			screen = 'HOW';
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
 		if (mouseIsPressed && mouseX >= 230 && mouseX <= 370 && mouseY >= 300 && mouseY <= 350) {
 			screen = 'SETTINGS';
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		} 
@@ -115,7 +115,7 @@ function menu () { //function for menu screen
 
 function how () {
 	
-	if (screen === 'HOW') {
+	if (screen === 'HOW') { //run code only if screen is set to 'how'
 		textFont("Impact"); //set font to Impact
 		textSize (69); //set text size to 69
 		fill(0, 9, 255); //set fill colour
@@ -143,9 +143,9 @@ function how () {
 		textSize(32); //set text size to 32
 		text("BACK", 9,385); //create text 'BACK'
     
-		if (mouseIsPressed && mouseX >= 6 && mouseX <= 82 && mouseY <= 395  && mouseY >= 345) {
+		if (mouseIsPressed && mouseX >= 6 && mouseX <= 82 && mouseY <= 395  && mouseY >= 345) { //if mouse is pressed on back button go to menu screen
 			screen = 'MENU';
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
@@ -153,7 +153,7 @@ function how () {
 }
 
 function options () {
-	if (screen === 'SETTINGS') {
+	if (screen === 'SETTINGS') { //run code only if screen is set to 'settings'
 		textFont("Impact"); //set font to Impact
 		textSize(69); //set text size to 69
 		fill(0, 9, 255); //set fill colour
@@ -165,174 +165,174 @@ function options () {
 		textSize(30); //set text size to 30
 		text("BACK", 0,32); //create text 'BACK'
 			
-		if (mouseIsPressed && mouseX>=0 && mouseX<= 66 && mouseY >= 0 && mouseY <=38) {
+		if (mouseIsPressed && mouseX>=0 && mouseX<= 66 && mouseY >= 0 && mouseY <=38) { //if mouse is pressed on back button go to menu screen
 			screen = 'MENU';
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
 		
-		if (mouseIsPressed && mouseX>=12.5 && mouseX<=87.5 && mouseY >= 125 && mouseY <=175) {
+		if (mouseIsPressed && mouseX>=12.5 && mouseX<=87.5 && mouseY >= 125 && mouseY <=175) { //if mouse is pressed on grass button set setting to grass
 			setting = 1;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX>=112.5 && mouseX<=187.5 && mouseY >= 125 && mouseY <=175) {
+		if (mouseIsPressed && mouseX>=112.5 && mouseX<=187.5 && mouseY >= 125 && mouseY <=175) {//if mouse is pressed on lava button set setting to lava
 			setting = 2;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX>=212.5 && mouseX<=287.5 && mouseY >= 125 && mouseY <=175) {
+		if (mouseIsPressed && mouseX>=212.5 && mouseX<=287.5 && mouseY >= 125 && mouseY <=175) {//if mouse is pressed on ice button set setting to ice
 			setting = 3;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX>=312.5 && mouseX<=387.5 && mouseY >= 125 && mouseY <=175) {
+		if (mouseIsPressed && mouseX>=312.5 && mouseX<=387.5 && mouseY >= 125 && mouseY <=175) {//if mouse is pressed on desert button set setting to desert
 			setting = 4;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
 		
-		if (mouseIsPressed && mouseX>=5 && mouseX<=45 && mouseY >= 280 && mouseY <=320) {
+		if (mouseIsPressed && mouseX>=5 && mouseX<=45 && mouseY >= 280 && mouseY <=320) { //if mouse is pressed on purple circle set player colour to purple
 			pc1 = 66;
 			pc2 = 6;
 			pc3 = 115;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX>=55 && mouseX<=95 && mouseY >= 280 && mouseY <=320) {
+		if (mouseIsPressed && mouseX>=55 && mouseX<=95 && mouseY >= 280 && mouseY <=320) {//if mouse is pressed on red circle set player colour to red
 			pc1 = 204;
 			pc2 = 0;
 			pc3 = 0;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX>=105 && mouseX<=145 && mouseY >= 280 && mouseY <=320) {
+		if (mouseIsPressed && mouseX>=105 && mouseX<=145 && mouseY >= 280 && mouseY <=320) {//if mouse is pressed on yellow circle set player colour to yellow
 			pc1 = 222;
 			pc2 = 215;
 			pc3 = 4;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX>=155 && mouseX<=195 && mouseY >= 280 && mouseY <=320) {
+		if (mouseIsPressed && mouseX>=155 && mouseX<=195 && mouseY >= 280 && mouseY <=320) {//if mouse is pressed on green circle set player colour to green
 			pc1 = 3;
 			pc2 = 89;
 			pc3 = 1;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX>=205 && mouseX<=245 && mouseY >= 280 && mouseY <=320) {
+		if (mouseIsPressed && mouseX>=205 && mouseX<=245 && mouseY >= 280 && mouseY <=320) {//if mouse is pressed on blue circle set player colour to blue
 			pc1 = 0;
 			pc2 = 30;
 			pc3 = 255;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX>=255 && mouseX<=295 && mouseY >= 280 && mouseY <=320) {
+		if (mouseIsPressed && mouseX>=255 && mouseX<=295 && mouseY >= 280 && mouseY <=320) {//if mouse is pressed on orange circle set player colour to orange
 			pc1 = 245;
 			pc2 = 90;
 			pc3 = 0;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX>=305 && mouseX<=345 && mouseY >= 280 && mouseY <=320) {
+		if (mouseIsPressed && mouseX>=305 && mouseX<=345 && mouseY >= 280 && mouseY <=320) {//if mouse is pressed on pink circle set player colour to pink
 			pc1 = 227;
 			pc2 = 12;
 			pc3 = 227;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
-		if (mouseIsPressed && mouseX>=355 && mouseX<=395 && mouseY >= 280 && mouseY <=320) {
+		if (mouseIsPressed && mouseX>=355 && mouseX<=395 && mouseY >= 280 && mouseY <=320) {//if mouse is pressed on black circle set player colour to black
 			pc1 = 0;
 			pc2 = 0;
 			pc3 = 0;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
 		
-		if (mouseIsPressed && mouseX>=164 && mouseX<=240 && mouseY >= 346 && mouseY <=396) {
+		if (mouseIsPressed && mouseX>=164 && mouseX<=240 && mouseY >= 346 && mouseY <=396) { //if mouse is pressed on on button turn sound on
 			sound = 'ON';
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}	
 		
-		if (mouseIsPressed && mouseX>=242 && mouseX<=338 && mouseY >= 346 && mouseY <=396) {
+		if (mouseIsPressed && mouseX>=242 && mouseX<=338 && mouseY >= 346 && mouseY <=396) {//if mouse is pressed on off button turn sound off
 			sound = 'OFF';
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play button sound
 				buttonSound.play ();
 			}
 		}
 		
-		if (setting === 1) { //grass
+		if (setting === 1) { //if setting is 1 make outline around grass
 			fill(28, 28, 28); //set fill colour
 			rect(50,150,95,70);  //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
 			rect(50,150,85,60);  //create rectangle at coordinates (inline)
 		}
 		
-		if (setting === 2) { //lava
+		if (setting === 2) {//if setting is 2 make outline around lava
 			fill(28, 28, 28);  //create rectangle at coordinates (outline)
 			rect(150,150,95,70); //outline
 			fill(4, 206, 217);  //create rectangle at coordinates (inline)
 			rect(150,150,85,60); //inline
 		}
 		
-		if (setting === 3) { //ice
+		if (setting === 3) {//if setting is 3 make outline around ice
 			fill(28, 28, 28); //set fill colour
 			rect(250,150,95,70);   //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
 			rect(250,150,85,60); //create rectangle at coordinates (inline)
 		}
 		
-		if (setting === 4) { //desert
+		if (setting === 4) { //if setting is 4 make outline around desert
 			fill(28, 28, 28); //set fill colour
 			rect(350,150,95,70);   //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
 			rect(350,150,85,60); //create rectangle at coordinates (inline)
 		}
 		
-		if (pc1 === 66 && pc2 === 6 && pc3 === 115) { //purple
+		if (pc1 === 66 && pc2 === 6 && pc3 === 115) { //if player color is purple make outline around purple circle
 			fill(28, 28, 28); //set fill colour
 			rect(25,300,60,60); //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
 			rect(25,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
-		if (pc1 === 204 && pc2 === 0 && pc3 === 0) { //red
+		if (pc1 === 204 && pc2 === 0 && pc3 === 0) { //if player color is red make outline around red circle
 			fill(28, 28, 28); //set fill colour
 			rect(75,300,60,60); //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
 			rect(75,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
-		if (pc1 === 222 && pc2 === 215 && pc3 === 4) { //yellow
+		if (pc1 === 222 && pc2 === 215 && pc3 === 4) { //if player color is yellow make outline around yellow circle
 			fill(28, 28, 28); //set fill colour
 			rect(125,300,60,60); //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
 			rect(125,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
-		if (pc1 === 3 && pc2 === 89 && pc3 === 1) { //green
+		if (pc1 === 3 && pc2 === 89 && pc3 === 1) { //if player color is green make outline around green circle
 			fill(28, 28, 28); //set fill colour
 			rect(175,300,60,60); //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
 			rect(175,300,50,50); //create rectangle at coordinates (inline)
 		}
 		
-		if (pc1 === 0 && pc2 === 30 && pc3 === 255) { //blue
+		if (pc1 === 0 && pc2 === 30 && pc3 === 255) { //if player color is blue make outline around blue circle
 			fill(28, 28, 28); //set fill colour
 			rect(225,300,60,60); //create rectangle at coordinates (outline)
 			fill(4, 206, 217); //set fill colour
@@ -425,7 +425,7 @@ function options () {
 }
 
 function lose () {
-	if (screen === 'LOSE') {
+	if (screen === 'LOSE') { //run code only if screen is set to 'lose'
 	    textFont("Impact"); //set font to Impact
 	    textSize(69); //set text size to 69
 	    fill(0, 9, 255); //set fill colour
@@ -449,7 +449,7 @@ function lose () {
 		lives = 5;
 		score = 0;
 		loseMessage = floor(random(1, 5));
-		    if (sound === 'ON') {
+		    if (sound === 'ON') {  //if sound is on play button sound
 				buttonSound.play ();
 			}
 	    }
@@ -474,7 +474,7 @@ function lose () {
 };
 
 function player () {
-	if (screen === 'GAME') {
+	if (screen === 'GAME') { //run code only if screen is set to 'game'
 		fill (pc1, pc2, pc3); //set fill colour
 		ellipse(x,y,40,40); //create circle at coordinates
 		noStroke ();
@@ -493,7 +493,7 @@ function player () {
 }
 
 function keyTyped () {
-	if (screen === 'GAME') {
+	if (screen === 'GAME') { //run code only if screen is set to 'game'
 		if ( key === 'w') {
 			if (sttus === 1) {
 				speedY = 4;
@@ -507,7 +507,7 @@ function keyTyped () {
 } 
 
 function display () {
-	if (screen === 'GAME') {
+	if (screen === 'GAME') { //run code only if screen is set to 'game'
 		score = score + 0.05;
 		fill(196, 182, 182,0); //set fill colour
 		noStroke();
@@ -560,7 +560,7 @@ function display () {
 		}
 		if (lives <= 0) {
 			screen = 'LOSE';
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on play lose sound
 				loseSound.play ();
 			}
 		}
@@ -569,7 +569,7 @@ function display () {
 }
 
 function bckground() {
-	if (screen === 'GAME') {
+	if (screen === 'GAME') { //run code only if screen is set to 'game'
 		if (setting === 1) {
 			c1 = 74;
 			c2 = 19;
@@ -618,113 +618,113 @@ function bckground() {
 		rect(200,375,400,50); //create rectangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(0,50,20,50,20,15);
+		triangle(0,50,20,50,20,15); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(40,50,20,50,20,15);
+		triangle(40,50,20,50,20,15); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(40,50,60,50,60,15);
+		triangle(40,50,60,50,60,15); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(80,50,60,50,60,15);
+		triangle(80,50,60,50,60,15); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(80,50,100,50,100,15);
+		triangle(80,50,100,50,100,15); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(120,50,100,50,100,15);
+		triangle(120,50,100,50,100,15); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(120,50,140,50,140,15);
+		triangle(120,50,140,50,140,15); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(160,50,140,50,140,15);
+		triangle(160,50,140,50,140,15); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(160,50,180,50,180,15);
+		triangle(160,50,180,50,180,15); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(200,50,180,50,180,15);
+		triangle(200,50,180,50,180,15); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(200,50,220,50,220,15);
+		triangle(200,50,220,50,220,15); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(240,50,220,50,220,15);
+		triangle(240,50,220,50,220,15); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(240,50,260,50,260,15);
+		triangle(240,50,260,50,260,15); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(280,50,260,50,260,15);
+		triangle(280,50,260,50,260,15); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(280,50,300,50,300,15);
+		triangle(280,50,300,50,300,15); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(320,50,300,50,300,15);
+		triangle(320,50,300,50,300,15); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(320,50,340,50,340,15);
+		triangle(320,50,340,50,340,15); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(360,50,340,50,340,15);
+		triangle(360,50,340,50,340,15); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(360,50,380,50,380,15);
+		triangle(360,50,380,50,380,15); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(400,50,380,50,380,15);
+		triangle(400,50,380,50,380,15); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(0,350,20,350,20,385);
+		triangle(0,350,20,350,20,385); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(40,350,20,350,20,385);
+		triangle(40,350,20,350,20,385); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(40,350,60,350,60,385);
+		triangle(40,350,60,350,60,385); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(80,350,60,350,60,385);
+		triangle(80,350,60,350,60,385); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A); //set fill colour
-		triangle(80,350,100,350,100,385);
+		triangle(80,350,100,350,100,385); //create triangle at coordinates
 		fill(c1B, c2B, c3B); //set fill colour
-		triangle(120,350,100,350,100,385);
+		triangle(120,350,100,350,100,385); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A);//set fill colour
-		triangle(120,350,140,350,140,385);
+		triangle(120,350,140,350,140,385); //create triangle at coordinates
 		fill(c1B, c2B, c3B);//set fill colour
-		triangle(160,350,140,350,140,385);
+		triangle(160,350,140,350,140,385); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A);//set fill colour
-		triangle(160,350,180,350,180,385);
+		triangle(160,350,180,350,180,385); //create triangle at coordinates
 		fill(c1B, c2B, c3B);//set fill colour
-		triangle(200,350,180,350,180,385);
+		triangle(200,350,180,350,180,385); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A);//set fill colour
-		triangle(200,350,220,350,220,385);
+		triangle(200,350,220,350,220,385); //create triangle at coordinates
 		fill(c1B, c2B, c3B);//set fill colour
-		triangle(240,350,220,350,220,385);
+		triangle(240,350,220,350,220,385); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A);//set fill colour
-		triangle(240,350,260,350,260,385);
+		triangle(240,350,260,350,260,385); //create triangle at coordinates
 		fill(c1B, c2B, c3B);//set fill colour
-		triangle(280,350,260,350,260,385);
+		triangle(280,350,260,350,260,385); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A);//set fill colour
-		triangle(280,350,300,350,300,385);
+		triangle(280,350,300,350,300,385); //create triangle at coordinates
 		fill(c1B, c2B, c3B);//set fill colour
-		triangle(320,350,300,350,300,385);
+		triangle(320,350,300,350,300,385); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A);//set fill colour
-		triangle(320,350,340,350,340,385);
+		triangle(320,350,340,350,340,385); //create triangle at coordinates
 		fill(c1B, c2B, c3B);//set fill colour
-		triangle(360,350,340,350,340,385);
+		triangle(360,350,340,350,340,385); //create triangle at coordinates
 		
 		fill(c1A, c2A, c3A);//set fill colour
-		triangle(360,350,380,350,380,385);
+		triangle(360,350,380,350,380,385); //create triangle at coordinates
 		fill(c1B, c2B, c3B);//set fill colour
-		triangle(400,350,380,350,380,385);
+		triangle(400,350,380,350,380,385); //create triangle at coordinates
 	}	
 }
 
 function obst () {
-	if (screen === 'GAME') {
+	if (screen === 'GAME') { //run code only if screen is set to 'game'
 		fill(102, 107, 107);//set fill colour
 		rect(objX1+20,objY1+20,40,40); //create rectangle at coordinates
 		fill(115, 115, 115);//set fill colour
-		triangle(objX1,objY1,objX1+40,objY1,objX1+40,objY1+40);
+		triangle(objX1,objY1,objX1+40,objY1,objX1+40,objY1+40); //create triangle on obstacle
 
 		objX1 = objX1 + objectSpeed;
 		
@@ -736,7 +736,7 @@ function obst () {
 			fill(102, 107, 107);//set fill colour
 			rect(objX2+20,objY2+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
-			triangle(objX2,objY2,objX2+40,objY2,objX2+40,objY2+40);
+			triangle(objX2,objY2,objX2+40,objY2,objX2+40,objY2+40); //create triangle on obstacle
 			objX2 = objX2 + objectSpeed + 0.1;
 		}
 		if (objX2 <= -40) {
@@ -748,7 +748,7 @@ function obst () {
 			fill(102, 107, 107);//set fill colour
 			rect(objX3+20,objY3+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
-			triangle(objX3,objY3,objX3+40,objY3,objX3+40,objY3+40);
+			triangle(objX3,objY3,objX3+40,objY3,objX3+40,objY3+40); //create triangle on obstacle
 			objX3 = objX3 + objectSpeed + 0.2;
 		}
 		if (objX3 <= -40) {
@@ -760,7 +760,7 @@ function obst () {
 			fill(102, 107, 107);//set fill colour
 			rect(objX4+20,objY4+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
-			triangle(objX4,objY4,objX4+40,objY4,objX4+40,objY4+40);
+			triangle(objX4,objY4,objX4+40,objY4,objX4+40,objY4+40); //create triangle on obstacle
 			objX4 = objX4 + objectSpeed + 0.3;
 		}
 		
@@ -773,7 +773,7 @@ function obst () {
 			fill(102, 107, 107);//set fill colour
 			rect(objX5+20,objY5+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
-			triangle(objX5,objY5,objX5+40,objY5,objX5+40,objY5+40);
+			triangle(objX5,objY5,objX5+40,objY5,objX5+40,objY5+40) //create triangle on obstacle
 			objX5 = objX5 + objectSpeed + 0.4;
 		}
 		
@@ -786,7 +786,7 @@ function obst () {
 			fill(102, 107, 107);//set fill colour
 			rect(objX6+20,objY6+20,40,40); //create rectangle at coordinates
 			fill(115, 115, 115);//set fill colour
-			triangle(objX6,objY6,objX6+40,objY6,objX6+40,objY6+40);
+			triangle(objX6,objY6,objX6+40,objY6,objX6+40,objY6+40); //create triangle on obstacle
 			objX6 = objX6 + objectSpeed + 0.4;
 		}
 		
@@ -799,7 +799,7 @@ function obst () {
 		objX1 = 500;
 		objY1 = random(70,330);
 			lives = lives - 1;    
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
 		}
@@ -807,7 +807,7 @@ function obst () {
 		objX2 = 500;
 		objY2 = random(70,330);
 		lives = lives - 1;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
 		}
@@ -815,7 +815,7 @@ function obst () {
 		objX3 = 500;
 		objY3 = random(70,330); 
 		lives = lives - 1;
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
 		}
@@ -823,7 +823,7 @@ function obst () {
 		objX4 = 500;
 		objY4 = random(70,330);   
 		lives = lives - 1; 
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
 		}
@@ -831,7 +831,7 @@ function obst () {
 		objX5 = 500;
 		objY5 = random(70,330);   
 		lives = lives - 1; 
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
 		}
@@ -839,7 +839,7 @@ function obst () {
 		objX6 = 500;
 		objY6 = random(70,330);   
 		lives = lives - 1; 
-			if (sound === 'ON') {
+			if (sound === 'ON') { //if sound is on life button sound
 				lifeSound.play ();
 			}
 		}
