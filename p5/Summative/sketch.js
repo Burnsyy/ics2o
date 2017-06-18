@@ -802,7 +802,7 @@ function obst () {
 			objY6 = random(70,330);
 		}
 		
-		if ((abs(x-objX1)<10) && (abs(y-objY1)<40)) {
+		if ((abs(x-objX1)<10) && (abs(y-objY1)<20)) {
 		objX1 = 500;
 		objY1 = random(70,330);
 			lives = lives - 1;    
@@ -810,7 +810,7 @@ function obst () {
 				lifeSound.play ();
 			}
 		}
-		if ((abs(x-objX2)<10) && (abs(y-objY2)<40)) {
+		if ((abs(x-objX2)<10) && (abs(y-objY2)<20)) {
 		objX2 = 500;
 		objY2 = random(70,330);
 		lives = lives - 1;
@@ -818,7 +818,7 @@ function obst () {
 				lifeSound.play ();
 			}
 		}
-		if ((abs(x-objX3)<10) && (abs(y-objY3)<40)) {
+		if ((abs(x-objX3)<10) && (abs(y-objY3)<20)) {
 		objX3 = 500;
 		objY3 = random(70,330); 
 		lives = lives - 1;
@@ -826,7 +826,7 @@ function obst () {
 				lifeSound.play ();
 			}
 		}
-		if ((abs(x-objX4)<10) && (abs(y-objY4)<40)) {
+		if ((abs(x-objX4)<10) && (abs(y-objY4)<20)) {
 		objX4 = 500;
 		objY4 = random(70,330);   
 		lives = lives - 1; 
@@ -834,7 +834,7 @@ function obst () {
 				lifeSound.play ();
 			}
 		}
-		if ((abs(x-objX5)<10) && (abs(y-objY5)<40)) {
+		if ((abs(x-objX5)<10) && (abs(y-objY5)<20)) {
 		objX5 = 500;
 		objY5 = random(70,330);   
 		lives = lives - 1; 
@@ -842,7 +842,7 @@ function obst () {
 				lifeSound.play ();
 			}
 		}
-		if ((abs(x-objX6)<10) && (abs(y-objY6)<40)) {
+		if ((abs(x-objX6)<10) && (abs(y-objY6)<20)) {
 		objX6 = 500;
 		objY6 = random(70,330);   
 		lives = lives - 1; 
