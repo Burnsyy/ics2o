@@ -739,7 +739,7 @@ function obst () {
 			objX1 = random(400,500);
 			objY1 = random(50,310);
 		}
-		if (score >= 15) {
+		if (score >= 20) {
 			fill(102, 107, 107);
 			rect(objX2+20,objY2+20,40,40);
 			fill(115, 115, 115);
@@ -751,7 +751,7 @@ function obst () {
 			objY2 = random(70,330);
 		}
 		
-		if (score >= 30) {
+		if (score >= 40) {
 			fill(102, 107, 107);
 			rect(objX3+20,objY3+20,40,40);
 			fill(115, 115, 115);
@@ -763,7 +763,7 @@ function obst () {
 			objY3 = random(70,330);
 		}
 		
-		if (score >= 40) {
+		if (score >= 60) {
 			fill(102, 107, 107);
 			rect(objX4+20,objY4+20,40,40);
 			fill(115, 115, 115);
@@ -776,7 +776,7 @@ function obst () {
 			objY4 = random(70,330);
 		}
 		
-		if (score >= 50) {
+		if (score >= 90) {
 			fill(102, 107, 107);
 			rect(objX5+20,objY5+20,40,40);
 			fill(115, 115, 115);
@@ -789,7 +789,7 @@ function obst () {
 			objY5 = random(70,330);
 		}
 		
-		if (score >= 60) {
+		if (score >= 150) {
 			fill(102, 107, 107);
 			rect(objX6+20,objY6+20,40,40);
 			fill(115, 115, 115);
