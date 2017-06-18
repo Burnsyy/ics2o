@@ -264,14 +264,14 @@ function options () {
 			}
 		}
 		
-		if (mouseIsPressed && mouseX>=164 && mouseX<=240 && mouseY >= 346 && mouseY <=396) {
+		if (mouseClicked && mouseX>=164 && mouseX<=240 && mouseY >= 346 && mouseY <=396) {
 			sound = 'ON';
 			if (sound === 'ON') {
 				buttonSound.play ();
 			}
 		}	
 		
-		if (mouseIsPressed && mouseX>=242 && mouseX<=338 && mouseY >= 346 && mouseY <=396) {
+		if (mouseClicked && mouseX>=242 && mouseX<=338 && mouseY >= 346 && mouseY <=396) {
 			sound = 'OFF';
 			if (sound === 'ON') {
 				buttonSound.play ();
