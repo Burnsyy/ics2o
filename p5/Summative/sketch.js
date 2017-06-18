@@ -517,13 +517,14 @@ function display () {
 			rect(372,7,60,15);
 			fill (207, 8, 8);
 			ellipse (394,7,10,10);
+		}
+		if (lives <= 0) {
+			screen = 'LOSE';
 			if (sound === 'ON') {
 				loseSound.play ();
 			}
 		}
-		if (lives <= 0) {
-			screen = 'LOSE';
-		}
+		
 	}
 }
 
